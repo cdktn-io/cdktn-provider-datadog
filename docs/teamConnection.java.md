@@ -4,7 +4,7 @@
 
 ### TeamConnection <a name="TeamConnection" id="@cdktn/provider-datadog.teamConnection.TeamConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection datadog_team_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection datadog_team_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamConnection.TeamConnection.Initializer"></a>
 
@@ -38,7 +38,7 @@ TeamConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnection.Initializer.parameter.connectedTeam">connectedTeam</a></code> | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeam">TeamConnectionConnectedTeam</a></code> | connected_team block. |
 | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnection.Initializer.parameter.team">team</a></code> | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionTeam">TeamConnectionTeam</a></code> | team block. |
-| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnection.Initializer.parameter.source">source</a></code> | <code>java.lang.String</code> | The source of the connection (e.g. github). |
+| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnection.Initializer.parameter.source">source</a></code> | <code>java.lang.String</code> | The name of the external source, such as `github` or `servicenow`. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 connected_team block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#connected_team TeamConnection#connected_team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#connected_team TeamConnection#connected_team}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 team block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#team TeamConnection#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#team TeamConnection#team}
 
 ---
 
@@ -126,9 +126,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-The source of the connection (e.g. github).
+The name of the external source, such as `github` or `servicenow`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#source TeamConnection#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#source TeamConnection#source}
 
 ---
 
@@ -610,7 +610,7 @@ The construct id used in the generated config for the TeamConnection to import.
 
 The id of the existing TeamConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,7 +916,7 @@ TeamConnectionConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConfig.property.connectedTeam">connectedTeam</a></code> | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeam">TeamConnectionConnectedTeam</a></code> | connected_team block. |
 | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConfig.property.team">team</a></code> | <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionTeam">TeamConnectionTeam</a></code> | team block. |
-| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConfig.property.source">source</a></code> | <code>java.lang.String</code> | The source of the connection (e.g. github). |
+| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConfig.property.source">source</a></code> | <code>java.lang.String</code> | The name of the external source, such as `github` or `servicenow`. |
 
 ---
 
@@ -1000,7 +1000,7 @@ public TeamConnectionConnectedTeam getConnectedTeam();
 
 connected_team block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#connected_team TeamConnection#connected_team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#connected_team TeamConnection#connected_team}
 
 ---
 
@@ -1014,7 +1014,7 @@ public TeamConnectionTeam getTeam();
 
 team block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#team TeamConnection#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#team TeamConnection#team}
 
 ---
 
@@ -1026,9 +1026,9 @@ public java.lang.String getSource();
 
 - *Type:* java.lang.String
 
-The source of the connection (e.g. github).
+The name of the external source, such as `github` or `servicenow`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#source TeamConnection#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#source TeamConnection#source}
 
 ---
 
@@ -1049,8 +1049,8 @@ TeamConnectionConnectedTeam.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeam.property.id">id</a></code> | <code>java.lang.String</code> | The ID of the external connected team. |
-| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeam.property.type">type</a></code> | <code>java.lang.String</code> | The resource type of the external connected team. Valid values are `github_team`. |
+| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeam.property.id">id</a></code> | <code>java.lang.String</code> | The ID of the external connected team. For GitHub teams, this is `@<organization>/<team-slug>`. For ServiceNow groups, this is `<instance_name>/<sys_id>`. |
+| <code><a href="#@cdktn/provider-datadog.teamConnection.TeamConnectionConnectedTeam.property.type">type</a></code> | <code>java.lang.String</code> | The resource type of the external connected team. Valid values are `github_team`, `servicenow_team`. |
 
 ---
 
@@ -1062,9 +1062,9 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-The ID of the external connected team.
+The ID of the external connected team. For GitHub teams, this is `@<organization>/<team-slug>`. For ServiceNow groups, this is `<instance_name>/<sys_id>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#id TeamConnection#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#id TeamConnection#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1079,9 +1079,9 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-The resource type of the external connected team. Valid values are `github_team`.
+The resource type of the external connected team. Valid values are `github_team`, `servicenow_team`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#type TeamConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#type TeamConnection#type}
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getId();
 
 The ID of the Datadog team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#id TeamConnection#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#id TeamConnection#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1134,7 +1134,7 @@ public java.lang.String getType();
 
 The resource type of the Datadog team. Valid values are `team`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/team_connection#type TeamConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/team_connection#type TeamConnection#type}
 
 ---
 

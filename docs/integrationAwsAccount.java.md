@@ -4,7 +4,7 @@
 
 ### IntegrationAwsAccount <a name="IntegrationAwsAccount" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account datadog_integration_aws_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account datadog_integration_aws_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccount.Initializer"></a>
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Your AWS Account ID without dashes. Invalid aws_account_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 AWS Account partition. Valid values are `aws`, `aws-cn`, `aws-us-gov`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Tags to apply to all metrics in the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 aws_regions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 logs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 metrics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 resources_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 traces_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
 
 ---
 
@@ -776,7 +776,7 @@ The construct id used in the generated config for the IntegrationAwsAccount to i
 
 The id of the existing IntegrationAwsAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1212,7 +1212,7 @@ public IntegrationAwsAccountAuthConfigAwsAuthConfigKeys getAwsAuthConfigKeys();
 
 aws_auth_config_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
 
 ---
 
@@ -1226,7 +1226,7 @@ public IntegrationAwsAccountAuthConfigAwsAuthConfigRole getAwsAuthConfigRole();
 
 aws_auth_config_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
 
 ---
 
@@ -1262,7 +1262,7 @@ public java.lang.String getAccessKeyId();
 
 AWS Access Key ID. Invalid access_key_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
 
 ---
 
@@ -1278,7 +1278,7 @@ AWS Secret Access Key.
 
 This value is write-only; changes made outside of Terraform will not be drift-detected. Secret_access_key must be non-empty and not contain whitespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
 
 ---
 
@@ -1314,7 +1314,7 @@ public java.lang.String getExternalId();
 
 AWS IAM External ID for associated role. If omitted, one will be generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.String getRoleName();
 
 AWS IAM Role name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
 
 ---
 
@@ -1364,7 +1364,7 @@ public java.lang.Boolean|IResolvable getIncludeAll();
 
 Include all regions. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
 
 ---
 
@@ -1378,7 +1378,7 @@ public java.util.List<java.lang.String> getIncludeOnly();
 
 Include only these regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
 
 ---
 
@@ -1512,7 +1512,7 @@ public java.lang.String getAwsAccountId();
 
 Your AWS Account ID without dashes. Invalid aws_account_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
 
 ---
 
@@ -1526,7 +1526,7 @@ public java.lang.String getAwsPartition();
 
 AWS Account partition. Valid values are `aws`, `aws-cn`, `aws-us-gov`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
 
 ---
 
@@ -1540,7 +1540,7 @@ public java.util.List<java.lang.String> getAccountTags();
 
 Tags to apply to all metrics in the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
 
 ---
 
@@ -1554,7 +1554,7 @@ public IntegrationAwsAccountAuthConfig getAuthConfig();
 
 auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
 
 ---
 
@@ -1568,7 +1568,7 @@ public IntegrationAwsAccountAwsRegions getAwsRegions();
 
 aws_regions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
 
 ---
 
@@ -1582,7 +1582,7 @@ public IntegrationAwsAccountLogsConfig getLogsConfig();
 
 logs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
 
 ---
 
@@ -1596,7 +1596,7 @@ public IntegrationAwsAccountMetricsConfig getMetricsConfig();
 
 metrics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
 
 ---
 
@@ -1610,7 +1610,7 @@ public IntegrationAwsAccountResourcesConfig getResourcesConfig();
 
 resources_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
 
 ---
 
@@ -1624,7 +1624,7 @@ public IntegrationAwsAccountTracesConfig getTracesConfig();
 
 traces_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
 
 ---
 
@@ -1658,7 +1658,7 @@ public IntegrationAwsAccountLogsConfigLambdaForwarder getLambdaForwarder();
 
 lambda_forwarder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
 
 ---
 
@@ -1696,7 +1696,7 @@ public java.util.List<java.lang.String> getLambdas();
 
 List of Datadog Lambda Log Forwarder ARNs in your AWS account. Defaults to `[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
 
 ---
 
@@ -1710,7 +1710,7 @@ public IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig getLogSourc
 
 log_source_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#log_source_config IntegrationAwsAccount#log_source_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#log_source_config IntegrationAwsAccount#log_source_config}
 
 ---
 
@@ -1726,7 +1726,7 @@ List of service IDs set to enable automatic log collection.
 
 Use [`datadog_integration_aws_available_logs_services` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_logs_services) or [the AWS Logs Integration API](https://docs.datadoghq.com/api/latest/aws-logs-integration/?#get-list-of-aws-log-ready-services) to get allowed values. Defaults to `[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
 
 ---
 
@@ -1760,7 +1760,7 @@ public IResolvable|java.util.List<IntegrationAwsAccountLogsConfigLambdaForwarder
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
 
 ---
 
@@ -1796,7 +1796,7 @@ public java.lang.String getSource();
 
 The AWS service for which the tag filters defined in `tags` will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#source IntegrationAwsAccount#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#source IntegrationAwsAccount#source}
 
 ---
 
@@ -1810,7 +1810,7 @@ public java.util.List<java.lang.String> getTags();
 
 The AWS resource tags to filter on for the service specified by `source`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
 
 ---
 
@@ -1825,9 +1825,11 @@ IntegrationAwsAccountMetricsConfig.builder()
 //  .automuteEnabled(java.lang.Boolean|IResolvable)
 //  .collectCloudwatchAlarms(java.lang.Boolean|IResolvable)
 //  .collectCustomMetrics(java.lang.Boolean|IResolvable)
+//  .collectServiceQuotas(java.lang.Boolean|IResolvable)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .metricNameFilters(IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigMetricNameFilters>)
 //  .namespaceFilters(IntegrationAwsAccountMetricsConfigNamespaceFilters)
+//  .resourceTypeTagFilters(IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigResourceTypeTagFilters>)
 //  .tagFilters(IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigTagFilters>)
     .build();
 ```
@@ -1839,9 +1841,11 @@ IntegrationAwsAccountMetricsConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.automuteEnabled">automuteEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable EC2 automute for AWS metrics Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.collectCloudwatchAlarms">collectCloudwatchAlarms</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable CloudWatch alarms collection Defaults to `false`. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.collectCustomMetrics">collectCustomMetrics</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable custom metrics collection Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.collectServiceQuotas">collectServiceQuotas</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable Service Quotas collection. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable AWS metrics collection Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.metricNameFilters">metricNameFilters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigMetricNameFilters">IntegrationAwsAccountMetricsConfigMetricNameFilters</a>></code> | metric_name_filters block. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.namespaceFilters">namespaceFilters</a></code> | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters">IntegrationAwsAccountMetricsConfigNamespaceFilters</a></code> | namespace_filters block. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.resourceTypeTagFilters">resourceTypeTagFilters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>></code> | resource_type_tag_filters block. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.tagFilters">tagFilters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFilters">IntegrationAwsAccountMetricsConfigTagFilters</a>></code> | tag_filters block. |
 
 ---
@@ -1856,7 +1860,7 @@ public java.lang.Boolean|IResolvable getAutomuteEnabled();
 
 Enable EC2 automute for AWS metrics Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
 
 ---
 
@@ -1870,7 +1874,7 @@ public java.lang.Boolean|IResolvable getCollectCloudwatchAlarms();
 
 Enable CloudWatch alarms collection Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
 
 ---
 
@@ -1884,7 +1888,23 @@ public java.lang.Boolean|IResolvable getCollectCustomMetrics();
 
 Enable custom metrics collection Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
+
+---
+
+##### `collectServiceQuotas`<sup>Optional</sup> <a name="collectServiceQuotas" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.collectServiceQuotas"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCollectServiceQuotas();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Enable Service Quotas collection.
+
+Incurs CloudWatch `GetMetricData` charges on your AWS bill. Requires `resources_config.extended_collection` to be set to `true`, and the Datadog AWS integration role must allow `servicequotas:ListServices`, `servicequotas:ListServiceQuotas` and `servicequotas:ListRequestedServiceQuotaChangeHistory`. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#collect_service_quotas IntegrationAwsAccount#collect_service_quotas}
 
 ---
 
@@ -1898,7 +1918,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Enable AWS metrics collection Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
 
 ---
 
@@ -1912,7 +1932,7 @@ public IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigMetricNameFi
 
 metric_name_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#metric_name_filters IntegrationAwsAccount#metric_name_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#metric_name_filters IntegrationAwsAccount#metric_name_filters}
 
 ---
 
@@ -1926,7 +1946,21 @@ public IntegrationAwsAccountMetricsConfigNamespaceFilters getNamespaceFilters();
 
 namespace_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
+
+---
+
+##### `resourceTypeTagFilters`<sup>Optional</sup> <a name="resourceTypeTagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig.property.resourceTypeTagFilters"></a>
+
+```java
+public IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigResourceTypeTagFilters> getResourceTypeTagFilters();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>>
+
+resource_type_tag_filters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#resource_type_tag_filters IntegrationAwsAccount#resource_type_tag_filters}
 
 ---
 
@@ -1940,7 +1974,7 @@ public IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigTagFilters> 
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
 
 ---
 
@@ -1978,7 +2012,7 @@ public java.lang.String getNamespace();
 
 The AWS CloudWatch namespace to which this metric name filter applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
 
 ---
 
@@ -1992,7 +2026,7 @@ public java.util.List<java.lang.String> getExcludeOnly();
 
 Exclude metric names matching one of these patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
 
 ---
 
@@ -2006,7 +2040,7 @@ public java.util.List<java.lang.String> getIncludeOnly();
 
 Include only metric names matching one of these patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
 
 ---
 
@@ -2044,7 +2078,7 @@ Exclude only these namespaces from metrics collection.
 
 Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values. Defaults to `["AWS/SQS", "AWS/ElasticMapReduce", "AWS/Usage"]`. `AWS/SQS`, `AWS/ElasticMapReduce`, and `AWS/Usage` are excluded by default to reduce your AWS CloudWatch costs from `GetMetricData` API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
 
 ---
 
@@ -2058,7 +2092,89 @@ public java.util.List<java.lang.String> getIncludeOnly();
 
 Include only these namespaces for metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+
+---
+
+### IntegrationAwsAccountMetricsConfigResourceTypeTagFilters <a name="IntegrationAwsAccountMetricsConfigResourceTypeTagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.integration_aws_account.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters;
+
+IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.builder()
+    .expression(java.lang.String)
+//  .custom(java.lang.Boolean|IResolvable)
+//  .resourceTypes(java.util.List<java.lang.String>)
+//  .service(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.expression">expression</a></code> | <code>java.lang.String</code> | The tag filter expression used when collecting metrics for the specified resource types. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.custom">custom</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this filter applies to custom resources. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.resourceTypes">resourceTypes</a></code> | <code>java.util.List<java.lang.String></code> | The AWS resource types within `service` for which the tag filter expression is applied. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.service">service</a></code> | <code>java.lang.String</code> | The AWS service for which the tag filter expression is applied. |
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+The tag filter expression used when collecting metrics for the specified resource types.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#expression IntegrationAwsAccount#expression}
+
+---
+
+##### `custom`<sup>Optional</sup> <a name="custom" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.custom"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCustom();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether this filter applies to custom resources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#custom IntegrationAwsAccount#custom}
+
+---
+
+##### `resourceTypes`<sup>Optional</sup> <a name="resourceTypes" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.resourceTypes"></a>
+
+```java
+public java.util.List<java.lang.String> getResourceTypes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The AWS resource types within `service` for which the tag filter expression is applied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#resource_types IntegrationAwsAccount#resource_types}
+
+---
+
+##### `service`<sup>Optional</sup> <a name="service" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters.property.service"></a>
+
+```java
+public java.lang.String getService();
+```
+
+- *Type:* java.lang.String
+
+The AWS service for which the tag filter expression is applied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#service IntegrationAwsAccount#service}
 
 ---
 
@@ -2094,7 +2210,7 @@ public java.lang.String getNamespace();
 
 The AWS service for which the tag filters defined in `tags` will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
 
 ---
 
@@ -2108,7 +2224,7 @@ public java.util.List<java.lang.String> getTags();
 
 The AWS resource tags to filter on for the service specified by `namespace`. Defaults to `[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
 
 ---
 
@@ -2146,7 +2262,7 @@ Enable Cloud Security Management to scan AWS resources for vulnerabilities, misc
 
 Requires `extended_collection` to be set to `true`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
 
 ---
 
@@ -2162,7 +2278,7 @@ Whether Datadog collects additional attributes and configuration information abo
 
 Required for `cloud_security_posture_management_collection`. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
 
 ---
 
@@ -2196,7 +2312,7 @@ public IntegrationAwsAccountTracesConfigXrayServices getXrayServices();
 
 xray_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
 
 ---
 
@@ -2232,7 +2348,7 @@ public java.lang.Boolean|IResolvable getIncludeAll();
 
 Include all services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
 
 ---
 
@@ -2246,7 +2362,7 @@ public java.util.List<java.lang.String> getIncludeOnly();
 
 Include only these services. Defaults to `[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
 
 ---
 
@@ -5774,13 +5890,16 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.putMetricNameFilters">putMetricNameFilters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.putNamespaceFilters">putNamespaceFilters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.putResourceTypeTagFilters">putResourceTypeTagFilters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.putTagFilters">putTagFilters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetAutomuteEnabled">resetAutomuteEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetCollectCloudwatchAlarms">resetCollectCloudwatchAlarms</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetCollectCustomMetrics">resetCollectCustomMetrics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetCollectServiceQuotas">resetCollectServiceQuotas</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetMetricNameFilters">resetMetricNameFilters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetNamespaceFilters">resetNamespaceFilters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetResourceTypeTagFilters">resetResourceTypeTagFilters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetTagFilters">resetTagFilters</a></code> | *No description.* |
 
 ---
@@ -5959,6 +6078,18 @@ public void putNamespaceFilters(IntegrationAwsAccountMetricsConfigNamespaceFilte
 
 ---
 
+##### `putResourceTypeTagFilters` <a name="putResourceTypeTagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.putResourceTypeTagFilters"></a>
+
+```java
+public void putResourceTypeTagFilters(IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigResourceTypeTagFilters> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.putResourceTypeTagFilters.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>>
+
+---
+
 ##### `putTagFilters` <a name="putTagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.putTagFilters"></a>
 
 ```java
@@ -5989,6 +6120,12 @@ public void resetCollectCloudwatchAlarms()
 public void resetCollectCustomMetrics()
 ```
 
+##### `resetCollectServiceQuotas` <a name="resetCollectServiceQuotas" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetCollectServiceQuotas"></a>
+
+```java
+public void resetCollectServiceQuotas()
+```
+
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetEnabled"></a>
 
 ```java
@@ -6007,6 +6144,12 @@ public void resetMetricNameFilters()
 public void resetNamespaceFilters()
 ```
 
+##### `resetResourceTypeTagFilters` <a name="resetResourceTypeTagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetResourceTypeTagFilters"></a>
+
+```java
+public void resetResourceTypeTagFilters()
+```
+
 ##### `resetTagFilters` <a name="resetTagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.resetTagFilters"></a>
 
 ```java
@@ -6022,17 +6165,21 @@ public void resetTagFilters()
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.metricNameFilters">metricNameFilters</a></code> | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigMetricNameFiltersList">IntegrationAwsAccountMetricsConfigMetricNameFiltersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.namespaceFilters">namespaceFilters</a></code> | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference">IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.resourceTypeTagFilters">resourceTypeTagFilters</a></code> | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList">IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.tagFilters">tagFilters</a></code> | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFiltersList">IntegrationAwsAccountMetricsConfigTagFiltersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.automuteEnabledInput">automuteEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectCloudwatchAlarmsInput">collectCloudwatchAlarmsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectCustomMetricsInput">collectCustomMetricsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectServiceQuotasInput">collectServiceQuotasInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.metricNameFiltersInput">metricNameFiltersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigMetricNameFilters">IntegrationAwsAccountMetricsConfigMetricNameFilters</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.namespaceFiltersInput">namespaceFiltersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters">IntegrationAwsAccountMetricsConfigNamespaceFilters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.resourceTypeTagFiltersInput">resourceTypeTagFiltersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.tagFiltersInput">tagFiltersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFilters">IntegrationAwsAccountMetricsConfigTagFilters</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.automuteEnabled">automuteEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectCloudwatchAlarms">collectCloudwatchAlarms</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectCustomMetrics">collectCustomMetrics</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectServiceQuotas">collectServiceQuotas</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig">IntegrationAwsAccountMetricsConfig</a></code> | *No description.* |
 
@@ -6082,6 +6229,16 @@ public IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference getName
 
 ---
 
+##### `resourceTypeTagFilters`<sup>Required</sup> <a name="resourceTypeTagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.resourceTypeTagFilters"></a>
+
+```java
+public IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList getResourceTypeTagFilters();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList">IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList</a>
+
+---
+
 ##### `tagFilters`<sup>Required</sup> <a name="tagFilters" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.tagFilters"></a>
 
 ```java
@@ -6122,6 +6279,16 @@ public java.lang.Boolean|IResolvable getCollectCustomMetricsInput();
 
 ---
 
+##### `collectServiceQuotasInput`<sup>Optional</sup> <a name="collectServiceQuotasInput" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectServiceQuotasInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCollectServiceQuotasInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.enabledInput"></a>
 
 ```java
@@ -6149,6 +6316,16 @@ public IResolvable|IntegrationAwsAccountMetricsConfigNamespaceFilters getNamespa
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters">IntegrationAwsAccountMetricsConfigNamespaceFilters</a>
+
+---
+
+##### `resourceTypeTagFiltersInput`<sup>Optional</sup> <a name="resourceTypeTagFiltersInput" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.resourceTypeTagFiltersInput"></a>
+
+```java
+public IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigResourceTypeTagFilters> getResourceTypeTagFiltersInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>>
 
 ---
 
@@ -6192,6 +6369,16 @@ public java.lang.Boolean|IResolvable getCollectCustomMetrics();
 
 ---
 
+##### `collectServiceQuotas`<sup>Required</sup> <a name="collectServiceQuotas" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.collectServiceQuotas"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCollectServiceQuotas();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference.property.enabled"></a>
 
 ```java
@@ -6209,6 +6396,542 @@ public IResolvable|IntegrationAwsAccountMetricsConfig getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig">IntegrationAwsAccountMetricsConfig</a>
+
+---
+
+
+### IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList <a name="IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.integration_aws_account.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList;
+
+new IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.get"></a>
+
+```java
+public IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<IntegrationAwsAccountMetricsConfigResourceTypeTagFilters> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>>
+
+---
+
+
+### IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference <a name="IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.integration_aws_account.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference;
+
+new IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resetCustom">resetCustom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resetResourceTypes">resetResourceTypes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resetService">resetService</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCustom` <a name="resetCustom" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resetCustom"></a>
+
+```java
+public void resetCustom()
+```
+
+##### `resetResourceTypes` <a name="resetResourceTypes" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resetResourceTypes"></a>
+
+```java
+public void resetResourceTypes()
+```
+
+##### `resetService` <a name="resetService" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.resetService"></a>
+
+```java
+public void resetService()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.customInput">customInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.expressionInput">expressionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.resourceTypesInput">resourceTypesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.serviceInput">serviceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.custom">custom</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.resourceTypes">resourceTypes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.service">service</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customInput`<sup>Optional</sup> <a name="customInput" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.customInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCustomInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `expressionInput`<sup>Optional</sup> <a name="expressionInput" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.expressionInput"></a>
+
+```java
+public java.lang.String getExpressionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceTypesInput`<sup>Optional</sup> <a name="resourceTypesInput" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.resourceTypesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getResourceTypesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `serviceInput`<sup>Optional</sup> <a name="serviceInput" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.serviceInput"></a>
+
+```java
+public java.lang.String getServiceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `custom`<sup>Required</sup> <a name="custom" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.custom"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCustom();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceTypes`<sup>Required</sup> <a name="resourceTypes" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.resourceTypes"></a>
+
+```java
+public java.util.List<java.lang.String> getResourceTypes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.service"></a>
+
+```java
+public java.lang.String getService();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFiltersOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|IntegrationAwsAccountMetricsConfigResourceTypeTagFilters getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigResourceTypeTagFilters">IntegrationAwsAccountMetricsConfigResourceTypeTagFilters</a>
 
 ---
 

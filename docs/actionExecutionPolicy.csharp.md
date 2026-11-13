@@ -4,7 +4,7 @@
 
 ### ActionExecutionPolicy <a name="ActionExecutionPolicy" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy datadog_action_execution_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy datadog_action_execution_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicy.Initializer"></a>
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the ActionExecutionPolicy to i
 
 The id of the existing ActionExecutionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,7 +931,7 @@ new ActionExecutionPolicyActionPattern {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyActionPattern.property.actionFqns">ActionFqns</a></code> | <code>string[]</code> | The fully qualified action names this policy matches. |
-| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyActionPattern.property.integration">Integration</a></code> | <code>string</code> | The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyActionPattern.property.integration">Integration</a></code> | <code>string</code> | The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`, `INTEGRATION_SLACK`. |
 
 ---
 
@@ -947,7 +947,7 @@ The fully qualified action names this policy matches.
 
 Use `*` to match all actions of the integration, or a fully qualified name prefixed with the integration's action namespace (for example `com.datadoghq.script.*` for the Script integration).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#action_fqns ActionExecutionPolicy#action_fqns}
 
 ---
 
@@ -959,9 +959,9 @@ public string Integration { get; set; }
 
 - *Type:* string
 
-The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`.
+The integration the actions belong to. Valid values are `INTEGRATION_KUBERNETES`, `INTEGRATION_SCRIPT`, `INTEGRATION_REMOTE_ACTION`, `INTEGRATION_SLACK`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#integration ActionExecutionPolicy#integration}
 
 ---
 
@@ -1087,7 +1087,7 @@ public ActionExecutionPolicyActionPattern ActionPattern { get; set; }
 
 action_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#action_pattern ActionExecutionPolicy#action_pattern}
 
 ---
 
@@ -1101,7 +1101,7 @@ public string Effect { get; set; }
 
 Whether the policy allows or denies the matched actions. Valid values are `allow`, `deny`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#effect ActionExecutionPolicy#effect}
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Name { get; set; }
 
 The name of the execution policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
 
 ---
 
@@ -1129,7 +1129,7 @@ public ActionExecutionPolicyScope Scope { get; set; }
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#scope ActionExecutionPolicy#scope}
 
 ---
 
@@ -1143,7 +1143,7 @@ public IResolvable|ActionExecutionPolicyTarget[] Target { get; set; }
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target ActionExecutionPolicy#target}
 
 ---
 
@@ -1157,7 +1157,8 @@ using Io.Cdktn.Providers.Datadog;
 new ActionExecutionPolicyScope {
     ActionExecutionPolicyScopeKubernetes Kubernetes = null,
     ActionExecutionPolicyScopeRemoteActionRshell RemoteActionRshell = null,
-    ActionExecutionPolicyScopeScripts Scripts = null
+    ActionExecutionPolicyScopeScripts Scripts = null,
+    ActionExecutionPolicyScopeSlack Slack = null
 };
 ```
 
@@ -1168,6 +1169,7 @@ new ActionExecutionPolicyScope {
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScope.property.kubernetes">Kubernetes</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetes">ActionExecutionPolicyScopeKubernetes</a></code> | kubernetes block. |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScope.property.remoteActionRshell">RemoteActionRshell</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshell">ActionExecutionPolicyScopeRemoteActionRshell</a></code> | remote_action_rshell block. |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScope.property.scripts">Scripts</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScripts">ActionExecutionPolicyScopeScripts</a></code> | scripts block. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScope.property.slack">Slack</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack">ActionExecutionPolicyScopeSlack</a></code> | slack block. |
 
 ---
 
@@ -1181,7 +1183,7 @@ public ActionExecutionPolicyScopeKubernetes Kubernetes { get; set; }
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#kubernetes ActionExecutionPolicy#kubernetes}
 
 ---
 
@@ -1195,7 +1197,7 @@ public ActionExecutionPolicyScopeRemoteActionRshell RemoteActionRshell { get; se
 
 remote_action_rshell block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#remote_action_rshell ActionExecutionPolicy#remote_action_rshell}
 
 ---
 
@@ -1209,7 +1211,21 @@ public ActionExecutionPolicyScopeScripts Scripts { get; set; }
 
 scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#scripts ActionExecutionPolicy#scripts}
+
+---
+
+##### `Slack`<sup>Optional</sup> <a name="Slack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScope.property.slack"></a>
+
+```csharp
+public ActionExecutionPolicyScopeSlack Slack { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack">ActionExecutionPolicyScopeSlack</a>
+
+slack block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#slack ActionExecutionPolicy#slack}
 
 ---
 
@@ -1243,7 +1259,7 @@ public IResolvable|ActionExecutionPolicyScopeKubernetesRule[] Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1277,7 +1293,7 @@ public string[] TargetNamespaces { get; set; }
 
 The Kubernetes namespaces this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target_namespaces ActionExecutionPolicy#target_namespaces}
 
 ---
 
@@ -1311,7 +1327,7 @@ public IResolvable|ActionExecutionPolicyScopeRemoteActionRshellRule[] Rule { get
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1347,7 +1363,7 @@ public string Access { get; set; }
 
 The level of remote shell access granted for the target paths. Valid values are `read_only`, `read_write`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#access ActionExecutionPolicy#access}
 
 ---
 
@@ -1361,7 +1377,7 @@ public string[] TargetPaths { get; set; }
 
 The filesystem paths this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target_paths ActionExecutionPolicy#target_paths}
 
 ---
 
@@ -1395,7 +1411,7 @@ public IResolvable|ActionExecutionPolicyScopeScriptsRule[] Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
 
 ---
 
@@ -1429,7 +1445,75 @@ public string[] TargetScriptNames { get; set; }
 
 The script names this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#target_script_names ActionExecutionPolicy#target_script_names}
+
+---
+
+### ActionExecutionPolicyScopeSlack <a name="ActionExecutionPolicyScopeSlack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ActionExecutionPolicyScopeSlack {
+    IResolvable|ActionExecutionPolicyScopeSlackRule[] Rule = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack.property.rule">Rule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>[]</code> | rule block. |
+
+---
+
+##### `Rule`<sup>Optional</sup> <a name="Rule" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack.property.rule"></a>
+
+```csharp
+public IResolvable|ActionExecutionPolicyScopeSlackRule[] Rule { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>[]
+
+rule block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#rule ActionExecutionPolicy#rule}
+
+---
+
+### ActionExecutionPolicyScopeSlackRule <a name="ActionExecutionPolicyScopeSlackRule" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ActionExecutionPolicyScopeSlackRule {
+    string[] ChannelNameSelectors
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule.property.channelNameSelectors">ChannelNameSelectors</a></code> | <code>string[]</code> | The channel name selectors this rule applies to, for example `incident-*`. Use `*` to match any channel name. |
+
+---
+
+##### `ChannelNameSelectors`<sup>Required</sup> <a name="ChannelNameSelectors" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule.property.channelNameSelectors"></a>
+
+```csharp
+public string[] ChannelNameSelectors { get; set; }
+```
+
+- *Type:* string[]
+
+The channel name selectors this rule applies to, for example `incident-*`. Use `*` to match any channel name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#channel_name_selectors ActionExecutionPolicy#channel_name_selectors}
 
 ---
 
@@ -1450,7 +1534,7 @@ new ActionExecutionPolicyTarget {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyTarget.property.agentTags">AgentTags</a></code> | <code>string[]</code> | The Agent tags identifying the target, for example `env:prod`. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyTarget.property.agentTags">AgentTags</a></code> | <code>string[]</code> | The tags identifying the target, for example `env:prod` for Agents or `slack_workspace_id:T0123456789` for a Slack workspace. |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyTarget.property.name">Name</a></code> | <code>string</code> | A human-readable name for the target. |
 
 ---
@@ -1463,9 +1547,9 @@ public string[] AgentTags { get; set; }
 
 - *Type:* string[]
 
-The Agent tags identifying the target, for example `env:prod`.
+The tags identifying the target, for example `env:prod` for Agents or `slack_workspace_id:T0123456789` for a Slack workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#agent_tags ActionExecutionPolicy#agent_tags}
 
 ---
 
@@ -1479,7 +1563,7 @@ public string Name { get; set; }
 
 A human-readable name for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/action_execution_policy#name ActionExecutionPolicy#name}
 
 ---
 
@@ -2571,9 +2655,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.putKubernetes">PutKubernetes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.putRemoteActionRshell">PutRemoteActionRshell</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.putScripts">PutScripts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.putSlack">PutSlack</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.resetKubernetes">ResetKubernetes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.resetRemoteActionRshell">ResetRemoteActionRshell</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.resetScripts">ResetScripts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.resetSlack">ResetSlack</a></code> | *No description.* |
 
 ---
 
@@ -2763,6 +2849,18 @@ private void PutScripts(ActionExecutionPolicyScopeScripts Value)
 
 ---
 
+##### `PutSlack` <a name="PutSlack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.putSlack"></a>
+
+```csharp
+private void PutSlack(ActionExecutionPolicyScopeSlack Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.putSlack.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack">ActionExecutionPolicyScopeSlack</a>
+
+---
+
 ##### `ResetKubernetes` <a name="ResetKubernetes" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.resetKubernetes"></a>
 
 ```csharp
@@ -2781,6 +2879,12 @@ private void ResetRemoteActionRshell()
 private void ResetScripts()
 ```
 
+##### `ResetSlack` <a name="ResetSlack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.resetSlack"></a>
+
+```csharp
+private void ResetSlack()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2791,9 +2895,11 @@ private void ResetScripts()
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.kubernetes">Kubernetes</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetesOutputReference">ActionExecutionPolicyScopeKubernetesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.remoteActionRshell">RemoteActionRshell</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshellOutputReference">ActionExecutionPolicyScopeRemoteActionRshellOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.scripts">Scripts</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScriptsOutputReference">ActionExecutionPolicyScopeScriptsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.slack">Slack</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference">ActionExecutionPolicyScopeSlackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.kubernetesInput">KubernetesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeKubernetes">ActionExecutionPolicyScopeKubernetes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.remoteActionRshellInput">RemoteActionRshellInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeRemoteActionRshell">ActionExecutionPolicyScopeRemoteActionRshell</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.scriptsInput">ScriptsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScripts">ActionExecutionPolicyScopeScripts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.slackInput">SlackInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack">ActionExecutionPolicyScopeSlack</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScope">ActionExecutionPolicyScope</a></code> | *No description.* |
 
 ---
@@ -2852,6 +2958,16 @@ public ActionExecutionPolicyScopeScriptsOutputReference Scripts { get; }
 
 ---
 
+##### `Slack`<sup>Required</sup> <a name="Slack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.slack"></a>
+
+```csharp
+public ActionExecutionPolicyScopeSlackOutputReference Slack { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference">ActionExecutionPolicyScopeSlackOutputReference</a>
+
+---
+
 ##### `KubernetesInput`<sup>Optional</sup> <a name="KubernetesInput" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.kubernetesInput"></a>
 
 ```csharp
@@ -2879,6 +2995,16 @@ public IResolvable|ActionExecutionPolicyScopeScripts ScriptsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScripts">ActionExecutionPolicyScopeScripts</a>
+
+---
+
+##### `SlackInput`<sup>Optional</sup> <a name="SlackInput" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeOutputReference.property.slackInput"></a>
+
+```csharp
+public IResolvable|ActionExecutionPolicyScopeSlack SlackInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack">ActionExecutionPolicyScopeSlack</a>
 
 ---
 
@@ -4391,6 +4517,746 @@ public IResolvable|ActionExecutionPolicyScopeScriptsRule InternalValue { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeScriptsRule">ActionExecutionPolicyScopeScriptsRule</a>
+
+---
+
+
+### ActionExecutionPolicyScopeSlackOutputReference <a name="ActionExecutionPolicyScopeSlackOutputReference" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ActionExecutionPolicyScopeSlackOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.putRule">PutRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.resetRule">ResetRule</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutRule` <a name="PutRule" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.putRule"></a>
+
+```csharp
+private void PutRule(IResolvable|ActionExecutionPolicyScopeSlackRule[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.putRule.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>[]
+
+---
+
+##### `ResetRule` <a name="ResetRule" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.resetRule"></a>
+
+```csharp
+private void ResetRule()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.rule">Rule</a></code> | <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList">ActionExecutionPolicyScopeSlackRuleList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.ruleInput">RuleInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack">ActionExecutionPolicyScopeSlack</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Rule`<sup>Required</sup> <a name="Rule" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.rule"></a>
+
+```csharp
+public ActionExecutionPolicyScopeSlackRuleList Rule { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList">ActionExecutionPolicyScopeSlackRuleList</a>
+
+---
+
+##### `RuleInput`<sup>Optional</sup> <a name="RuleInput" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.ruleInput"></a>
+
+```csharp
+public IResolvable|ActionExecutionPolicyScopeSlackRule[] RuleInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ActionExecutionPolicyScopeSlack InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlack">ActionExecutionPolicyScopeSlack</a>
+
+---
+
+
+### ActionExecutionPolicyScopeSlackRuleList <a name="ActionExecutionPolicyScopeSlackRuleList" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ActionExecutionPolicyScopeSlackRuleList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.get"></a>
+
+```csharp
+private ActionExecutionPolicyScopeSlackRuleOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ActionExecutionPolicyScopeSlackRule[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>[]
+
+---
+
+
+### ActionExecutionPolicyScopeSlackRuleOutputReference <a name="ActionExecutionPolicyScopeSlackRuleOutputReference" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ActionExecutionPolicyScopeSlackRuleOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.channelNameSelectorsInput">ChannelNameSelectorsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.channelNameSelectors">ChannelNameSelectors</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ChannelNameSelectorsInput`<sup>Optional</sup> <a name="ChannelNameSelectorsInput" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.channelNameSelectorsInput"></a>
+
+```csharp
+public string[] ChannelNameSelectorsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ChannelNameSelectors`<sup>Required</sup> <a name="ChannelNameSelectors" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.channelNameSelectors"></a>
+
+```csharp
+public string[] ChannelNameSelectors { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRuleOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ActionExecutionPolicyScopeSlackRule InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.actionExecutionPolicy.ActionExecutionPolicyScopeSlackRule">ActionExecutionPolicyScopeSlackRule</a>
 
 ---
 

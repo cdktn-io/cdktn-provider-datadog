@@ -4,7 +4,7 @@
 
 ### IntegrationDatabricksAccount <a name="IntegrationDatabricksAccount" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account datadog_integration_databricks_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account datadog_integration_databricks_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccount.Initializer"></a>
 
@@ -114,7 +114,7 @@ Authentication configured on the Databricks integration account.
 
 A `bearer_token` method indicates an account still on token authentication, which Databricks accepts only on accounts that already use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#authentication IntegrationDatabricksAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#authentication IntegrationDatabricksAccount#authentication}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Human-readable name of the Databricks integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#name IntegrationDatabricksAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#name IntegrationDatabricksAccount#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Settings configured on the Databricks integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Data Datadog collects from Databricks, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dataflows IntegrationDatabricksAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dataflows IntegrationDatabricksAccount#dataflows}
 
 ---
 
@@ -547,7 +547,7 @@ def put_authentication(
 
 The bearer token authentication method configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_bearer_token_auth IntegrationDatabricksAccount#databricks_integration_account_bearer_token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_integration_account_bearer_token_auth IntegrationDatabricksAccount#databricks_integration_account_bearer_token_auth}
 
 ---
 
@@ -557,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The Databricks OAuth authentication method and service principal configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_o_auth_auth IntegrationDatabricksAccount#databricks_integration_account_o_auth_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_integration_account_o_auth_auth IntegrationDatabricksAccount#databricks_integration_account_o_auth_auth}
 
 ---
 
@@ -567,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The Private Action Runner authentication method configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_private_action_runner_auth IntegrationDatabricksAccount#databricks_integration_account_private_action_runner_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_integration_account_private_action_runner_auth IntegrationDatabricksAccount#databricks_integration_account_private_action_runner_auth}
 
 ---
 
@@ -588,7 +588,7 @@ def put_dataflows(
 
 Cost data collected from your Databricks system tables. Requires [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/) to be set up for your organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_cloud_cost_metrics IntegrationDatabricksAccount#databricks_cloud_cost_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_cloud_cost_metrics IntegrationDatabricksAccount#databricks_cloud_cost_metrics}
 
 ---
 
@@ -598,7 +598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Data Jobs Monitoring, which collects performance, reliability, and cost data for your Databricks jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_data_observability_jobs_monitoring IntegrationDatabricksAccount#databricks_data_observability_jobs_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_data_observability_jobs_monitoring IntegrationDatabricksAccount#databricks_data_observability_jobs_monitoring}
 
 ---
 
@@ -608,7 +608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Data Observability, which collects lineage and data quality information from your Databricks catalogs so you can explore how data flows and detect, resolve, and prevent quality issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_data_observability_quality_monitoring IntegrationDatabricksAccount#databricks_data_observability_quality_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_data_observability_quality_monitoring IntegrationDatabricksAccount#databricks_data_observability_quality_monitoring}
 
 ---
 
@@ -620,7 +620,7 @@ Health and usage metrics for your Databricks model serving endpoints.
 
 Not supported on accounts that authenticate with `private_action_runner`; on those accounts this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_model_serving_metrics IntegrationDatabricksAccount#databricks_model_serving_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_model_serving_metrics IntegrationDatabricksAccount#databricks_model_serving_metrics}
 
 ---
 
@@ -639,7 +639,7 @@ def put_settings(
 
 URL of the Databricks workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#workspace_url IntegrationDatabricksAccount#workspace_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#workspace_url IntegrationDatabricksAccount#workspace_url}
 
 ---
 
@@ -649,7 +649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ID of the SQL warehouse used to query the Databricks system tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#system_tables_sql_warehouse_id IntegrationDatabricksAccount#system_tables_sql_warehouse_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#system_tables_sql_warehouse_id IntegrationDatabricksAccount#system_tables_sql_warehouse_id}
 
 ---
 
@@ -773,7 +773,7 @@ The construct id used in the generated config for the IntegrationDatabricksAccou
 
 The id of the existing IntegrationDatabricksAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1101,7 +1101,7 @@ databricks_integration_account_bearer_token_auth: IntegrationDatabricksAccountAu
 
 The bearer token authentication method configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_bearer_token_auth IntegrationDatabricksAccount#databricks_integration_account_bearer_token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_integration_account_bearer_token_auth IntegrationDatabricksAccount#databricks_integration_account_bearer_token_auth}
 
 ---
 
@@ -1115,7 +1115,7 @@ databricks_integration_account_o_auth_auth: IntegrationDatabricksAccountAuthenti
 
 The Databricks OAuth authentication method and service principal configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_o_auth_auth IntegrationDatabricksAccount#databricks_integration_account_o_auth_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_integration_account_o_auth_auth IntegrationDatabricksAccount#databricks_integration_account_o_auth_auth}
 
 ---
 
@@ -1129,7 +1129,7 @@ databricks_integration_account_private_action_runner_auth: IntegrationDatabricks
 
 The Private Action Runner authentication method configured on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_integration_account_private_action_runner_auth IntegrationDatabricksAccount#databricks_integration_account_private_action_runner_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_integration_account_private_action_runner_auth IntegrationDatabricksAccount#databricks_integration_account_private_action_runner_auth}
 
 ---
 
@@ -1142,6 +1142,7 @@ from cdktn_provider_datadog import integration_databricks_account
 
 integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth(
   auth_type: str = None,
+  token: str = None,
   token_wo: str = None,
   token_wo_version: str = None
 )
@@ -1152,7 +1153,8 @@ integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabrick
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth.property.authType">auth_type</a></code> | <code>str</code> | The authentication method type. Valid values are `bearer_token`. |
-| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth.property.tokenWo">token_wo</a></code> | <code>str</code> | Secret token used to authenticate with Databricks. This write-only value is not stored in Terraform state. |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth.property.token">token</a></code> | <code>str</code> | Secret token used to authenticate with Databricks. |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth.property.tokenWo">token_wo</a></code> | <code>str</code> | Secret token used to authenticate with Databricks. This write-only value is not stored in Terraform state. Requires Terraform 1.11+. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth.property.tokenWoVersion">token_wo_version</a></code> | <code>str</code> | Version trigger for token_wo rotation. String length must be at least 1. |
 
 ---
@@ -1167,7 +1169,23 @@ auth_type: str
 
 The authentication method type. Valid values are `bearer_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth.property.token"></a>
+
+```python
+token: str
+```
+
+- *Type:* str
+
+Secret token used to authenticate with Databricks.
+
+Conflicts with `token_wo`. Prefer `token_wo`, which Terraform 1.11+ keeps out of state; this attribute is stored in Terraform state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#token IntegrationDatabricksAccount#token}
 
 ---
 
@@ -1179,9 +1197,9 @@ token_wo: str
 
 - *Type:* str
 
-Secret token used to authenticate with Databricks. This write-only value is not stored in Terraform state.
+Secret token used to authenticate with Databricks. This write-only value is not stored in Terraform state. Requires Terraform 1.11+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#token_wo IntegrationDatabricksAccount#token_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#token_wo IntegrationDatabricksAccount#token_wo}
 
 ---
 
@@ -1195,7 +1213,7 @@ token_wo_version: str
 
 Version trigger for token_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#token_wo_version IntegrationDatabricksAccount#token_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#token_wo_version IntegrationDatabricksAccount#token_wo_version}
 
 ---
 
@@ -1208,10 +1226,11 @@ from cdktn_provider_datadog import integration_databricks_account
 
 integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth(
   client_id: str,
-  client_secret_wo: str,
-  client_secret_wo_version: str,
   auth_type: str = None,
-  azure_tenant_id: str = None
+  azure_tenant_id: str = None,
+  client_secret: str = None,
+  client_secret_wo: str = None,
+  client_secret_wo_version: str = None
 )
 ```
 
@@ -1220,10 +1239,11 @@ integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabrick
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientId">client_id</a></code> | <code>str</code> | Client ID of the Databricks service principal. |
-| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWo">client_secret_wo</a></code> | <code>str</code> | Secret of the Databricks service principal. |
-| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWoVersion">client_secret_wo_version</a></code> | <code>str</code> | Version trigger for client_secret_wo rotation. String length must be at least 1. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.authType">auth_type</a></code> | <code>str</code> | The authentication method type. Valid values are `databricks_oauth`. Defaults to `"databricks_oauth"`. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Microsoft Entra ID tenant of the service principal, for Azure Databricks workspaces. |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecret">client_secret</a></code> | <code>str</code> | Secret of the Databricks service principal. |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWo">client_secret_wo</a></code> | <code>str</code> | Secret of the Databricks service principal. |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWoVersion">client_secret_wo_version</a></code> | <code>str</code> | Version trigger for client_secret_wo rotation. String length must be at least 1. |
 
 ---
 
@@ -1237,37 +1257,7 @@ client_id: str
 
 Client ID of the Databricks service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_id IntegrationDatabricksAccount#client_id}
-
----
-
-##### `client_secret_wo`<sup>Required</sup> <a name="client_secret_wo" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWo"></a>
-
-```python
-client_secret_wo: str
-```
-
-- *Type:* str
-
-Secret of the Databricks service principal.
-
-Generate it under User management > Service principals > Credentials & secrets in Databricks. This write-only value is not stored in Terraform state.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_secret_wo IntegrationDatabricksAccount#client_secret_wo}
-
----
-
-##### `client_secret_wo_version`<sup>Required</sup> <a name="client_secret_wo_version" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWoVersion"></a>
-
-```python
-client_secret_wo_version: str
-```
-
-- *Type:* str
-
-Version trigger for client_secret_wo rotation. String length must be at least 1.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_secret_wo_version IntegrationDatabricksAccount#client_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_id IntegrationDatabricksAccount#client_id}
 
 ---
 
@@ -1281,7 +1271,7 @@ auth_type: str
 
 The authentication method type. Valid values are `databricks_oauth`. Defaults to `"databricks_oauth"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
 
 ---
 
@@ -1295,7 +1285,53 @@ azure_tenant_id: str
 
 Microsoft Entra ID tenant of the service principal, for Azure Databricks workspaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#azure_tenant_id IntegrationDatabricksAccount#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#azure_tenant_id IntegrationDatabricksAccount#azure_tenant_id}
+
+---
+
+##### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecret"></a>
+
+```python
+client_secret: str
+```
+
+- *Type:* str
+
+Secret of the Databricks service principal.
+
+Generate it under User management > Service principals > Credentials & secrets in Databricks. Exactly one of `client_secret` or `client_secret_wo` must be set. Prefer `client_secret_wo`, which Terraform 1.11+ keeps out of state; this attribute is stored in Terraform state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_secret IntegrationDatabricksAccount#client_secret}
+
+---
+
+##### `client_secret_wo`<sup>Optional</sup> <a name="client_secret_wo" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWo"></a>
+
+```python
+client_secret_wo: str
+```
+
+- *Type:* str
+
+Secret of the Databricks service principal.
+
+Generate it under User management > Service principals > Credentials & secrets in Databricks. This write-only value is not stored in Terraform state. Requires Terraform 1.11+.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_secret_wo IntegrationDatabricksAccount#client_secret_wo}
+
+---
+
+##### `client_secret_wo_version`<sup>Optional</sup> <a name="client_secret_wo_version" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth.property.clientSecretWoVersion"></a>
+
+```python
+client_secret_wo_version: str
+```
+
+- *Type:* str
+
+Version trigger for client_secret_wo rotation. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_secret_wo_version IntegrationDatabricksAccount#client_secret_wo_version}
 
 ---
 
@@ -1335,7 +1371,7 @@ connection_id: str
 
 Unique identifier of the Private Action Runner connection holding the credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#connection_id IntegrationDatabricksAccount#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#connection_id IntegrationDatabricksAccount#connection_id}
 
 ---
 
@@ -1349,7 +1385,7 @@ user_uuid: str
 
 Unique identifier of the user the Private Action Runner connection belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#user_uuid IntegrationDatabricksAccount#user_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#user_uuid IntegrationDatabricksAccount#user_uuid}
 
 ---
 
@@ -1363,7 +1399,7 @@ auth_type: str
 
 The authentication method type. Valid values are `private_action_runner`. Defaults to `"private_action_runner"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
 
 ---
 
@@ -1377,7 +1413,7 @@ secret_path: str
 
 Path of the credential inside the secret backend configured on the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#secret_path IntegrationDatabricksAccount#secret_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#secret_path IntegrationDatabricksAccount#secret_path}
 
 ---
 
@@ -1503,7 +1539,7 @@ Authentication configured on the Databricks integration account.
 
 A `bearer_token` method indicates an account still on token authentication, which Databricks accepts only on accounts that already use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#authentication IntegrationDatabricksAccount#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#authentication IntegrationDatabricksAccount#authentication}
 
 ---
 
@@ -1517,7 +1553,7 @@ name: str
 
 Human-readable name of the Databricks integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#name IntegrationDatabricksAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#name IntegrationDatabricksAccount#name}
 
 ---
 
@@ -1531,7 +1567,7 @@ settings: IntegrationDatabricksAccountSettings
 
 Settings configured on the Databricks integration account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1545,7 +1581,7 @@ dataflows: IntegrationDatabricksAccountDataflows
 
 Data Datadog collects from Databricks, keyed by dataflow id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dataflows IntegrationDatabricksAccount#dataflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dataflows IntegrationDatabricksAccount#dataflows}
 
 ---
 
@@ -1585,7 +1621,7 @@ databricks_cloud_cost_metrics: IntegrationDatabricksAccountDataflowsDatabricksCl
 
 Cost data collected from your Databricks system tables. Requires [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management/) to be set up for your organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_cloud_cost_metrics IntegrationDatabricksAccount#databricks_cloud_cost_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_cloud_cost_metrics IntegrationDatabricksAccount#databricks_cloud_cost_metrics}
 
 ---
 
@@ -1599,7 +1635,7 @@ databricks_data_observability_jobs_monitoring: IntegrationDatabricksAccountDataf
 
 Data Jobs Monitoring, which collects performance, reliability, and cost data for your Databricks jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_data_observability_jobs_monitoring IntegrationDatabricksAccount#databricks_data_observability_jobs_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_data_observability_jobs_monitoring IntegrationDatabricksAccount#databricks_data_observability_jobs_monitoring}
 
 ---
 
@@ -1613,7 +1649,7 @@ databricks_data_observability_quality_monitoring: IntegrationDatabricksAccountDa
 
 Data Observability, which collects lineage and data quality information from your Databricks catalogs so you can explore how data flows and detect, resolve, and prevent quality issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_data_observability_quality_monitoring IntegrationDatabricksAccount#databricks_data_observability_quality_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_data_observability_quality_monitoring IntegrationDatabricksAccount#databricks_data_observability_quality_monitoring}
 
 ---
 
@@ -1629,7 +1665,7 @@ Health and usage metrics for your Databricks model serving endpoints.
 
 Not supported on accounts that authenticate with `private_action_runner`; on those accounts this dataflow collects no data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#databricks_model_serving_metrics IntegrationDatabricksAccount#databricks_model_serving_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#databricks_model_serving_metrics IntegrationDatabricksAccount#databricks_model_serving_metrics}
 
 ---
 
@@ -1665,7 +1701,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -1679,7 +1715,7 @@ settings: IntegrationDatabricksAccountDataflowsDatabricksCloudCostMetricsSetting
 
 Settings of the Cloud Cost Management dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1715,7 +1751,7 @@ Whether cost data is collected for every workspace in the Databricks account rat
 
 This takes effect across the Databricks account: if any one workspace enables it, Datadog collects cost data for all of them regardless of their individual settings, and every covered workspace incurs Cloud Cost Management charges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#ccm_collect_all_workspaces IntegrationDatabricksAccount#ccm_collect_all_workspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#ccm_collect_all_workspaces IntegrationDatabricksAccount#ccm_collect_all_workspaces}
 
 ---
 
@@ -1751,7 +1787,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -1765,7 +1801,7 @@ settings: IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMo
 
 Settings of the Data Jobs Monitoring dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1778,6 +1814,7 @@ from cdktn_provider_datadog import integration_databricks_account
 
 integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings(
   dd_api_key_id: str = None,
+  dd_api_key_secret: str = None,
   dd_api_key_secret_wo: str = None,
   dd_api_key_secret_wo_version: str = None,
   djm_global_init_script_enabled: bool | IResolvable = None,
@@ -1792,7 +1829,8 @@ integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksData
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.ddApiKeyId">dd_api_key_id</a></code> | <code>str</code> | ID of the Datadog API key the global init script uses to submit data. |
-| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.ddApiKeySecretWo">dd_api_key_secret_wo</a></code> | <code>str</code> | Secret value of the Datadog API key identified by `dd_api_key_id`. This write-only value is not stored in Terraform state. |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.ddApiKeySecret">dd_api_key_secret</a></code> | <code>str</code> | Secret value of the Datadog API key identified by `dd_api_key_id`. |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.ddApiKeySecretWo">dd_api_key_secret_wo</a></code> | <code>str</code> | Secret value of the Datadog API key identified by `dd_api_key_id`. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.ddApiKeySecretWoVersion">dd_api_key_secret_wo_version</a></code> | <code>str</code> | Version trigger for dd_api_key_secret_wo rotation. String length must be at least 1. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.djmGlobalInitScriptEnabled">djm_global_init_script_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Datadog installs and manages the Agent on your Databricks clusters through a global init script. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.scriptGpumEnabled">script_gpum_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether GPU metrics are collected from your Databricks clusters. |
@@ -1811,7 +1849,23 @@ dd_api_key_id: str
 
 ID of the Datadog API key the global init script uses to submit data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_id IntegrationDatabricksAccount#dd_api_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_id IntegrationDatabricksAccount#dd_api_key_id}
+
+---
+
+##### `dd_api_key_secret`<sup>Optional</sup> <a name="dd_api_key_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettings.property.ddApiKeySecret"></a>
+
+```python
+dd_api_key_secret: str
+```
+
+- *Type:* str
+
+Secret value of the Datadog API key identified by `dd_api_key_id`.
+
+Conflicts with `dd_api_key_secret_wo`. Prefer `dd_api_key_secret_wo`, which Terraform 1.11+ keeps out of state; this attribute is stored in Terraform state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_secret IntegrationDatabricksAccount#dd_api_key_secret}
 
 ---
 
@@ -1823,9 +1877,11 @@ dd_api_key_secret_wo: str
 
 - *Type:* str
 
-Secret value of the Datadog API key identified by `dd_api_key_id`. This write-only value is not stored in Terraform state.
+Secret value of the Datadog API key identified by `dd_api_key_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo IntegrationDatabricksAccount#dd_api_key_secret_wo}
+This write-only value is not stored in Terraform state. Requires Terraform 1.11+.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo IntegrationDatabricksAccount#dd_api_key_secret_wo}
 
 ---
 
@@ -1839,7 +1895,7 @@ dd_api_key_secret_wo_version: str
 
 Version trigger for dd_api_key_secret_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo_version IntegrationDatabricksAccount#dd_api_key_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo_version IntegrationDatabricksAccount#dd_api_key_secret_wo_version}
 
 ---
 
@@ -1855,7 +1911,7 @@ Whether Datadog installs and manages the Agent on your Databricks clusters throu
 
 The script does not apply to clusters in Standard access mode. When `false`, the Agent is installed manually.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#djm_global_init_script_enabled IntegrationDatabricksAccount#djm_global_init_script_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#djm_global_init_script_enabled IntegrationDatabricksAccount#djm_global_init_script_enabled}
 
 ---
 
@@ -1871,7 +1927,7 @@ Whether GPU metrics are collected from your Databricks clusters.
 
 The Agent installed by the global init script performs the collection, so this requires the dataflow to be enabled with `djm_global_init_script_enabled` set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#script_gpum_enabled IntegrationDatabricksAccount#script_gpum_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#script_gpum_enabled IntegrationDatabricksAccount#script_gpum_enabled}
 
 ---
 
@@ -1887,7 +1943,7 @@ Whether driver and worker logs are collected from your Databricks clusters.
 
 The Agent installed by the global init script performs the collection, so this requires the dataflow to be enabled with `djm_global_init_script_enabled` set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#script_logs_enabled IntegrationDatabricksAccount#script_logs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#script_logs_enabled IntegrationDatabricksAccount#script_logs_enabled}
 
 ---
 
@@ -1903,7 +1959,7 @@ Whether health and cost data is collected for jobs running on Serverless or SQL 
 
 This compute has no clusters for the global init script to target, so collection reads the Databricks system tables and requires `system_tables_sql_warehouse_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#serverless_jobs_enabled IntegrationDatabricksAccount#serverless_jobs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#serverless_jobs_enabled IntegrationDatabricksAccount#serverless_jobs_enabled}
 
 ---
 
@@ -1939,7 +1995,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -1953,7 +2009,7 @@ settings: IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityQualit
 
 Settings of the Data Observability dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -1991,7 +2047,7 @@ Cron expression setting how often Datadog connects to your Databricks warehouse 
 
 Currently, only hourly (`0 * * * *`) and daily (`0 0 * * *`) are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#do_crawlers_cron IntegrationDatabricksAccount#do_crawlers_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#do_crawlers_cron IntegrationDatabricksAccount#do_crawlers_cron}
 
 ---
 
@@ -2005,7 +2061,7 @@ sync_system_catalog: bool | IResolvable
 
 Whether metadata from the Databricks `system` catalog is included in Data Observability alongside your data catalogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#sync_system_catalog IntegrationDatabricksAccount#sync_system_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#sync_system_catalog IntegrationDatabricksAccount#sync_system_catalog}
 
 ---
 
@@ -2039,7 +2095,7 @@ enabled: bool | IResolvable
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -2075,7 +2131,7 @@ workspace_url: str
 
 URL of the Databricks workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#workspace_url IntegrationDatabricksAccount#workspace_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#workspace_url IntegrationDatabricksAccount#workspace_url}
 
 ---
 
@@ -2089,7 +2145,7 @@ system_tables_sql_warehouse_id: str
 
 ID of the SQL warehouse used to query the Databricks system tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#system_tables_sql_warehouse_id IntegrationDatabricksAccount#system_tables_sql_warehouse_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#system_tables_sql_warehouse_id IntegrationDatabricksAccount#system_tables_sql_warehouse_id}
 
 ---
 
@@ -2149,6 +2205,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.resetAuthType">reset_auth_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.resetToken">reset_token</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.resetTokenWo">reset_token_wo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.resetTokenWoVersion">reset_token_wo_version</a></code> | *No description.* |
 
@@ -2332,6 +2389,12 @@ Returns a reversible string representation.
 def reset_auth_type() -> None
 ```
 
+##### `reset_token` <a name="reset_token" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.resetToken"></a>
+
+```python
+def reset_token() -> None
+```
+
 ##### `reset_token_wo` <a name="reset_token_wo" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.resetTokenWo"></a>
 
 ```python
@@ -2352,9 +2415,11 @@ def reset_token_wo_version() -> None
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.authTypeInput">auth_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.tokenWoInput">token_wo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.tokenWoVersionInput">token_wo_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.authType">auth_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.tokenWo">token_wo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.tokenWoVersion">token_wo_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth">IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuth</a></code> | *No description.* |
@@ -2395,6 +2460,16 @@ auth_type_input: str
 
 ---
 
+##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.tokenInput"></a>
+
+```python
+token_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `token_wo_input`<sup>Optional</sup> <a name="token_wo_input" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.tokenWoInput"></a>
 
 ```python
@@ -2419,6 +2494,16 @@ token_wo_version_input: str
 
 ```python
 auth_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `token`<sup>Required</sup> <a name="token" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountBearerTokenAuthOutputReference.property.token"></a>
+
+```python
+token: str
 ```
 
 - *Type:* str
@@ -2513,6 +2598,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetAuthType">reset_auth_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetAzureTenantId">reset_azure_tenant_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetClientSecret">reset_client_secret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetClientSecretWo">reset_client_secret_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetClientSecretWoVersion">reset_client_secret_wo_version</a></code> | *No description.* |
 
 ---
 
@@ -2700,6 +2788,24 @@ def reset_auth_type() -> None
 def reset_azure_tenant_id() -> None
 ```
 
+##### `reset_client_secret` <a name="reset_client_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetClientSecret"></a>
+
+```python
+def reset_client_secret() -> None
+```
+
+##### `reset_client_secret_wo` <a name="reset_client_secret_wo" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetClientSecretWo"></a>
+
+```python
+def reset_client_secret_wo() -> None
+```
+
+##### `reset_client_secret_wo_version` <a name="reset_client_secret_wo_version" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.resetClientSecretWoVersion"></a>
+
+```python
+def reset_client_secret_wo_version() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2710,11 +2816,13 @@ def reset_azure_tenant_id() -> None
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.authTypeInput">auth_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecretWoInput">client_secret_wo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecretWoVersionInput">client_secret_wo_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.authType">auth_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecretWo">client_secret_wo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecretWoVersion">client_secret_wo_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth">IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuth</a></code> | *No description.* |
@@ -2775,6 +2883,16 @@ client_id_input: str
 
 ---
 
+##### `client_secret_input`<sup>Optional</sup> <a name="client_secret_input" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecretInput"></a>
+
+```python
+client_secret_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `client_secret_wo_input`<sup>Optional</sup> <a name="client_secret_wo_input" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecretWoInput"></a>
 
 ```python
@@ -2819,6 +2937,16 @@ azure_tenant_id: str
 
 ```python
 client_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `client_secret`<sup>Required</sup> <a name="client_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationDatabricksIntegrationAccountOAuthAuthOutputReference.property.clientSecret"></a>
+
+```python
+client_secret: str
 ```
 
 - *Type:* str
@@ -3473,6 +3601,7 @@ Returns a reversible string representation.
 ```python
 def put_databricks_integration_account_bearer_token_auth(
   auth_type: str = None,
+  token: str = None,
   token_wo: str = None,
   token_wo_version: str = None
 ) -> None
@@ -3484,7 +3613,19 @@ def put_databricks_integration_account_bearer_token_auth(
 
 The authentication method type. Valid values are `bearer_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+
+---
+
+###### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationOutputReference.putDatabricksIntegrationAccountBearerTokenAuth.parameter.token"></a>
+
+- *Type:* str
+
+Secret token used to authenticate with Databricks.
+
+Conflicts with `token_wo`. Prefer `token_wo`, which Terraform 1.11+ keeps out of state; this attribute is stored in Terraform state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#token IntegrationDatabricksAccount#token}
 
 ---
 
@@ -3492,9 +3633,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Secret token used to authenticate with Databricks. This write-only value is not stored in Terraform state.
+Secret token used to authenticate with Databricks. This write-only value is not stored in Terraform state. Requires Terraform 1.11+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#token_wo IntegrationDatabricksAccount#token_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#token_wo IntegrationDatabricksAccount#token_wo}
 
 ---
 
@@ -3504,7 +3645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Version trigger for token_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#token_wo_version IntegrationDatabricksAccount#token_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#token_wo_version IntegrationDatabricksAccount#token_wo_version}
 
 ---
 
@@ -3513,10 +3654,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ```python
 def put_databricks_integration_account_o_auth_auth(
   client_id: str,
-  client_secret_wo: str,
-  client_secret_wo_version: str,
   auth_type: str = None,
-  azure_tenant_id: str = None
+  azure_tenant_id: str = None,
+  client_secret: str = None,
+  client_secret_wo: str = None,
+  client_secret_wo_version: str = None
 ) -> None
 ```
 
@@ -3526,29 +3668,7 @@ def put_databricks_integration_account_o_auth_auth(
 
 Client ID of the Databricks service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_id IntegrationDatabricksAccount#client_id}
-
----
-
-###### `client_secret_wo`<sup>Required</sup> <a name="client_secret_wo" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationOutputReference.putDatabricksIntegrationAccountOAuthAuth.parameter.clientSecretWo"></a>
-
-- *Type:* str
-
-Secret of the Databricks service principal.
-
-Generate it under User management > Service principals > Credentials & secrets in Databricks. This write-only value is not stored in Terraform state.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_secret_wo IntegrationDatabricksAccount#client_secret_wo}
-
----
-
-###### `client_secret_wo_version`<sup>Required</sup> <a name="client_secret_wo_version" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationOutputReference.putDatabricksIntegrationAccountOAuthAuth.parameter.clientSecretWoVersion"></a>
-
-- *Type:* str
-
-Version trigger for client_secret_wo rotation. String length must be at least 1.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#client_secret_wo_version IntegrationDatabricksAccount#client_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_id IntegrationDatabricksAccount#client_id}
 
 ---
 
@@ -3558,7 +3678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The authentication method type. Valid values are `databricks_oauth`. Defaults to `"databricks_oauth"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
 
 ---
 
@@ -3568,7 +3688,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Microsoft Entra ID tenant of the service principal, for Azure Databricks workspaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#azure_tenant_id IntegrationDatabricksAccount#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#azure_tenant_id IntegrationDatabricksAccount#azure_tenant_id}
+
+---
+
+###### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationOutputReference.putDatabricksIntegrationAccountOAuthAuth.parameter.clientSecret"></a>
+
+- *Type:* str
+
+Secret of the Databricks service principal.
+
+Generate it under User management > Service principals > Credentials & secrets in Databricks. Exactly one of `client_secret` or `client_secret_wo` must be set. Prefer `client_secret_wo`, which Terraform 1.11+ keeps out of state; this attribute is stored in Terraform state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_secret IntegrationDatabricksAccount#client_secret}
+
+---
+
+###### `client_secret_wo`<sup>Optional</sup> <a name="client_secret_wo" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationOutputReference.putDatabricksIntegrationAccountOAuthAuth.parameter.clientSecretWo"></a>
+
+- *Type:* str
+
+Secret of the Databricks service principal.
+
+Generate it under User management > Service principals > Credentials & secrets in Databricks. This write-only value is not stored in Terraform state. Requires Terraform 1.11+.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_secret_wo IntegrationDatabricksAccount#client_secret_wo}
+
+---
+
+###### `client_secret_wo_version`<sup>Optional</sup> <a name="client_secret_wo_version" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountAuthenticationOutputReference.putDatabricksIntegrationAccountOAuthAuth.parameter.clientSecretWoVersion"></a>
+
+- *Type:* str
+
+Version trigger for client_secret_wo rotation. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#client_secret_wo_version IntegrationDatabricksAccount#client_secret_wo_version}
 
 ---
 
@@ -3589,7 +3743,7 @@ def put_databricks_integration_account_private_action_runner_auth(
 
 Unique identifier of the Private Action Runner connection holding the credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#connection_id IntegrationDatabricksAccount#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#connection_id IntegrationDatabricksAccount#connection_id}
 
 ---
 
@@ -3599,7 +3753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Unique identifier of the user the Private Action Runner connection belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#user_uuid IntegrationDatabricksAccount#user_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#user_uuid IntegrationDatabricksAccount#user_uuid}
 
 ---
 
@@ -3609,7 +3763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The authentication method type. Valid values are `private_action_runner`. Defaults to `"private_action_runner"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#auth_type IntegrationDatabricksAccount#auth_type}
 
 ---
 
@@ -3619,7 +3773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Path of the credential inside the secret backend configured on the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#secret_path IntegrationDatabricksAccount#secret_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#secret_path IntegrationDatabricksAccount#secret_path}
 
 ---
 
@@ -4000,7 +4154,7 @@ Whether cost data is collected for every workspace in the Databricks account rat
 
 This takes effect across the Databricks account: if any one workspace enables it, Datadog collects cost data for all of them regardless of their individual settings, and every covered workspace incurs Cloud Cost Management charges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#ccm_collect_all_workspaces IntegrationDatabricksAccount#ccm_collect_all_workspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#ccm_collect_all_workspaces IntegrationDatabricksAccount#ccm_collect_all_workspaces}
 
 ---
 
@@ -4645,6 +4799,7 @@ Returns a reversible string representation.
 ```python
 def put_settings(
   dd_api_key_id: str = None,
+  dd_api_key_secret: str = None,
   dd_api_key_secret_wo: str = None,
   dd_api_key_secret_wo_version: str = None,
   djm_global_init_script_enabled: bool | IResolvable = None,
@@ -4660,7 +4815,19 @@ def put_settings(
 
 ID of the Datadog API key the global init script uses to submit data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_id IntegrationDatabricksAccount#dd_api_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_id IntegrationDatabricksAccount#dd_api_key_id}
+
+---
+
+###### `dd_api_key_secret`<sup>Optional</sup> <a name="dd_api_key_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringOutputReference.putSettings.parameter.ddApiKeySecret"></a>
+
+- *Type:* str
+
+Secret value of the Datadog API key identified by `dd_api_key_id`.
+
+Conflicts with `dd_api_key_secret_wo`. Prefer `dd_api_key_secret_wo`, which Terraform 1.11+ keeps out of state; this attribute is stored in Terraform state.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_secret IntegrationDatabricksAccount#dd_api_key_secret}
 
 ---
 
@@ -4668,9 +4835,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Secret value of the Datadog API key identified by `dd_api_key_id`. This write-only value is not stored in Terraform state.
+Secret value of the Datadog API key identified by `dd_api_key_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo IntegrationDatabricksAccount#dd_api_key_secret_wo}
+This write-only value is not stored in Terraform state. Requires Terraform 1.11+.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo IntegrationDatabricksAccount#dd_api_key_secret_wo}
 
 ---
 
@@ -4680,7 +4849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Version trigger for dd_api_key_secret_wo rotation. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo_version IntegrationDatabricksAccount#dd_api_key_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#dd_api_key_secret_wo_version IntegrationDatabricksAccount#dd_api_key_secret_wo_version}
 
 ---
 
@@ -4692,7 +4861,7 @@ Whether Datadog installs and manages the Agent on your Databricks clusters throu
 
 The script does not apply to clusters in Standard access mode. When `false`, the Agent is installed manually.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#djm_global_init_script_enabled IntegrationDatabricksAccount#djm_global_init_script_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#djm_global_init_script_enabled IntegrationDatabricksAccount#djm_global_init_script_enabled}
 
 ---
 
@@ -4704,7 +4873,7 @@ Whether GPU metrics are collected from your Databricks clusters.
 
 The Agent installed by the global init script performs the collection, so this requires the dataflow to be enabled with `djm_global_init_script_enabled` set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#script_gpum_enabled IntegrationDatabricksAccount#script_gpum_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#script_gpum_enabled IntegrationDatabricksAccount#script_gpum_enabled}
 
 ---
 
@@ -4716,7 +4885,7 @@ Whether driver and worker logs are collected from your Databricks clusters.
 
 The Agent installed by the global init script performs the collection, so this requires the dataflow to be enabled with `djm_global_init_script_enabled` set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#script_logs_enabled IntegrationDatabricksAccount#script_logs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#script_logs_enabled IntegrationDatabricksAccount#script_logs_enabled}
 
 ---
 
@@ -4728,7 +4897,7 @@ Whether health and cost data is collected for jobs running on Serverless or SQL 
 
 This compute has no clusters for the global init script to target, so collection reads the Databricks system tables and requires `system_tables_sql_warehouse_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#serverless_jobs_enabled IntegrationDatabricksAccount#serverless_jobs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#serverless_jobs_enabled IntegrationDatabricksAccount#serverless_jobs_enabled}
 
 ---
 
@@ -4888,6 +5057,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resetDdApiKeyId">reset_dd_api_key_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resetDdApiKeySecret">reset_dd_api_key_secret</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resetDdApiKeySecretWo">reset_dd_api_key_secret_wo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resetDdApiKeySecretWoVersion">reset_dd_api_key_secret_wo_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resetDjmGlobalInitScriptEnabled">reset_djm_global_init_script_enabled</a></code> | *No description.* |
@@ -5075,6 +5245,12 @@ Returns a reversible string representation.
 def reset_dd_api_key_id() -> None
 ```
 
+##### `reset_dd_api_key_secret` <a name="reset_dd_api_key_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resetDdApiKeySecret"></a>
+
+```python
+def reset_dd_api_key_secret() -> None
+```
+
 ##### `reset_dd_api_key_secret_wo` <a name="reset_dd_api_key_secret_wo" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.resetDdApiKeySecretWo"></a>
 
 ```python
@@ -5119,6 +5295,7 @@ def reset_serverless_jobs_enabled() -> None
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeyIdInput">dd_api_key_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecretInput">dd_api_key_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecretWoInput">dd_api_key_secret_wo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecretWoVersionInput">dd_api_key_secret_wo_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.djmGlobalInitScriptEnabledInput">djm_global_init_script_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -5126,6 +5303,7 @@ def reset_serverless_jobs_enabled() -> None
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.scriptLogsEnabledInput">script_logs_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.serverlessJobsEnabledInput">serverless_jobs_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeyId">dd_api_key_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecret">dd_api_key_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecretWo">dd_api_key_secret_wo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecretWoVersion">dd_api_key_secret_wo_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.djmGlobalInitScriptEnabled">djm_global_init_script_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -5164,6 +5342,16 @@ fqn: str
 
 ```python
 dd_api_key_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `dd_api_key_secret_input`<sup>Optional</sup> <a name="dd_api_key_secret_input" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecretInput"></a>
+
+```python
+dd_api_key_secret_input: str
 ```
 
 - *Type:* str
@@ -5234,6 +5422,16 @@ serverless_jobs_enabled_input: bool | IResolvable
 
 ```python
 dd_api_key_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `dd_api_key_secret`<sup>Required</sup> <a name="dd_api_key_secret" id="@cdktn/provider-datadog.integrationDatabricksAccount.IntegrationDatabricksAccountDataflowsDatabricksDataObservabilityJobsMonitoringSettingsOutputReference.property.ddApiKeySecret"></a>
+
+```python
+dd_api_key_secret: str
 ```
 
 - *Type:* str
@@ -5561,7 +5759,7 @@ Cron expression setting how often Datadog connects to your Databricks warehouse 
 
 Currently, only hourly (`0 * * * *`) and daily (`0 0 * * *`) are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#do_crawlers_cron IntegrationDatabricksAccount#do_crawlers_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#do_crawlers_cron IntegrationDatabricksAccount#do_crawlers_cron}
 
 ---
 
@@ -5571,7 +5769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Whether metadata from the Databricks `system` catalog is included in Data Observability alongside your data catalogs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#sync_system_catalog IntegrationDatabricksAccount#sync_system_catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#sync_system_catalog IntegrationDatabricksAccount#sync_system_catalog}
 
 ---
 
@@ -6563,7 +6761,7 @@ def put_databricks_cloud_cost_metrics(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -6573,7 +6771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Settings of the Cloud Cost Management dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -6592,7 +6790,7 @@ def put_databricks_data_observability_jobs_monitoring(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -6602,7 +6800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Settings of the Data Jobs Monitoring dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -6621,7 +6819,7 @@ def put_databricks_data_observability_quality_monitoring(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 
@@ -6631,7 +6829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Settings of the Data Observability dataflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#settings IntegrationDatabricksAccount#settings}
 
 ---
 
@@ -6649,7 +6847,7 @@ def put_databricks_model_serving_metrics(
 
 Whether Datadog collects this data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/integration_databricks_account#enabled IntegrationDatabricksAccount#enabled}
 
 ---
 

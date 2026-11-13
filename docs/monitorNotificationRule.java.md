@@ -4,7 +4,7 @@
 
 ### MonitorNotificationRule <a name="MonitorNotificationRule" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer"></a>
 
@@ -24,6 +24,7 @@ MonitorNotificationRule.Builder.create(Construct scope, java.lang.String id)
 //  .conditionalRecipients(MonitorNotificationRuleConditionalRecipients)
 //  .filter(MonitorNotificationRuleFilter)
 //  .recipients(java.util.List<java.lang.String>)
+//  .ruleOptions(MonitorNotificationRuleRuleOptions)
     .build();
 ```
 
@@ -43,6 +44,7 @@ MonitorNotificationRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.conditionalRecipients">conditionalRecipients</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients">MonitorNotificationRuleConditionalRecipients</a></code> | conditional_recipients block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a></code> | filter block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.recipients">recipients</a></code> | <code>java.util.List<java.lang.String></code> | List of recipients to notify. Cannot be used with `conditional_recipients`. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.ruleOptions">ruleOptions</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the monitor notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 bundle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 conditional_recipients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 
 ---
 
@@ -152,7 +154,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 List of recipients to notify. Cannot be used with `conditional_recipients`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+
+---
+
+##### `ruleOptions`<sup>Optional</sup> <a name="ruleOptions" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.ruleOptions"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
+
+Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#rule_options MonitorNotificationRule#rule_options}
 
 ---
 
@@ -187,10 +199,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putBundleConfig">putBundleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putConditionalRecipients">putConditionalRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putFilter">putFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putRuleOptions">putRuleOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetBundleConfig">resetBundleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetConditionalRecipients">resetConditionalRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetRecipients">resetRecipients</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetRuleOptions">resetRuleOptions</a></code> | *No description.* |
 
 ---
 
@@ -541,6 +555,18 @@ public void putFilter(MonitorNotificationRuleFilter value)
 
 ---
 
+##### `putRuleOptions` <a name="putRuleOptions" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putRuleOptions"></a>
+
+```java
+public void putRuleOptions(MonitorNotificationRuleRuleOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putRuleOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
+
+---
+
 ##### `resetBundleConfig` <a name="resetBundleConfig" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetBundleConfig"></a>
 
 ```java
@@ -563,6 +589,12 @@ public void resetFilter()
 
 ```java
 public void resetRecipients()
+```
+
+##### `resetRuleOptions` <a name="resetRuleOptions" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetRuleOptions"></a>
+
+```java
+public void resetRuleOptions()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -668,7 +700,7 @@ The construct id used in the generated config for the MonitorNotificationRule to
 
 The id of the existing MonitorNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,11 +734,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.conditionalRecipients">conditionalRecipients</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipientsOutputReference">MonitorNotificationRuleConditionalRecipientsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilterOutputReference">MonitorNotificationRuleFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptions">ruleOptions</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference">MonitorNotificationRuleRuleOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.bundleConfigInput">bundleConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleBundleConfig">MonitorNotificationRuleBundleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.conditionalRecipientsInput">conditionalRecipientsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients">MonitorNotificationRuleConditionalRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.filterInput">filterInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.recipientsInput">recipientsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptionsInput">ruleOptionsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.recipients">recipients</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
@@ -894,6 +928,16 @@ public java.lang.String getId();
 
 ---
 
+##### `ruleOptions`<sup>Required</sup> <a name="ruleOptions" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptions"></a>
+
+```java
+public MonitorNotificationRuleRuleOptionsOutputReference getRuleOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference">MonitorNotificationRuleRuleOptionsOutputReference</a>
+
+---
+
 ##### `bundleConfigInput`<sup>Optional</sup> <a name="bundleConfigInput" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.bundleConfigInput"></a>
 
 ```java
@@ -941,6 +985,16 @@ public java.util.List<java.lang.String> getRecipientsInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `ruleOptionsInput`<sup>Optional</sup> <a name="ruleOptionsInput" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptionsInput"></a>
+
+```java
+public IResolvable|MonitorNotificationRuleRuleOptions getRuleOptionsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
 
 ---
 
@@ -1014,7 +1068,7 @@ public java.lang.Number getDuration();
 
 Duration of the bundling period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
 
 ---
 
@@ -1050,7 +1104,7 @@ public IResolvable|java.util.List<MonitorNotificationRuleConditionalRecipientsCo
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
 
 ---
 
@@ -1064,7 +1118,7 @@ public java.util.List<java.lang.String> getFallbackRecipients();
 
 If none of the `conditions` applied, `fallback_recipients` will get notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
 
 ---
 
@@ -1102,7 +1156,7 @@ A list of recipients to notify.
 
 Uses the same format as the monitor message field. Must not start with an '@'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
 
 ---
 
@@ -1118,7 +1172,7 @@ Defines the condition under which the recipients are notified.
 
 Supported formats: Monitor status condition using `transition_type:<status>` (for example `transition_type:is_alert`) or a single tag `key:value pair` (for example `env:prod`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
 
 ---
 
@@ -1142,6 +1196,7 @@ MonitorNotificationRuleConfig.builder()
 //  .conditionalRecipients(MonitorNotificationRuleConditionalRecipients)
 //  .filter(MonitorNotificationRuleFilter)
 //  .recipients(java.util.List<java.lang.String>)
+//  .ruleOptions(MonitorNotificationRuleRuleOptions)
     .build();
 ```
 
@@ -1161,6 +1216,7 @@ MonitorNotificationRuleConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.conditionalRecipients">conditionalRecipients</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients">MonitorNotificationRuleConditionalRecipients</a></code> | conditional_recipients block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a></code> | filter block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.recipients">recipients</a></code> | <code>java.util.List<java.lang.String></code> | List of recipients to notify. Cannot be used with `conditional_recipients`. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.ruleOptions">ruleOptions</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept. |
 
 ---
 
@@ -1244,7 +1300,7 @@ public java.lang.String getName();
 
 The name of the monitor notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 
 ---
 
@@ -1258,7 +1314,7 @@ public MonitorNotificationRuleBundleConfig getBundleConfig();
 
 bundle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
 
 ---
 
@@ -1272,7 +1328,7 @@ public MonitorNotificationRuleConditionalRecipients getConditionalRecipients();
 
 conditional_recipients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
 
 ---
 
@@ -1286,7 +1342,7 @@ public MonitorNotificationRuleFilter getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 
 ---
 
@@ -1300,7 +1356,21 @@ public java.util.List<java.lang.String> getRecipients();
 
 List of recipients to notify. Cannot be used with `conditional_recipients`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+
+---
+
+##### `ruleOptions`<sup>Optional</sup> <a name="ruleOptions" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.ruleOptions"></a>
+
+```java
+public MonitorNotificationRuleRuleOptions getRuleOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
+
+Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#rule_options MonitorNotificationRule#rule_options}
 
 ---
 
@@ -1336,7 +1406,7 @@ public java.lang.String getScope();
 
 A scope expression composed of `key:value` pairs (such as `env:prod`) with boolean operators (AND, OR, NOT) and parentheses for grouping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
 
 ---
 
@@ -1350,7 +1420,43 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tag key:value pairs (e.g. team:product). All tags must match (AND semantics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+
+---
+
+### MonitorNotificationRuleRuleOptions <a name="MonitorNotificationRuleRuleOptions" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor_notification_rule.MonitorNotificationRuleRuleOptions;
+
+MonitorNotificationRuleRuleOptions.builder()
+    .isThreaded(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions.property.isThreaded">isThreaded</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether notifications from this rule are threaded. |
+
+---
+
+##### `isThreaded`<sup>Required</sup> <a name="isThreaded" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions.property.isThreaded"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsThreaded();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether notifications from this rule are threaded.
+
+When `true`, follow-up notifications for the same monitor alert are posted in Slack as replies to the first notification. Cannot be `true` when `bundle_config` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#is_threaded MonitorNotificationRule#is_threaded}
 
 ---
 
@@ -2728,6 +2834,277 @@ public IResolvable|MonitorNotificationRuleFilter getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a>
+
+---
+
+
+### MonitorNotificationRuleRuleOptionsOutputReference <a name="MonitorNotificationRuleRuleOptionsOutputReference" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.monitor_notification_rule.MonitorNotificationRuleRuleOptionsOutputReference;
+
+new MonitorNotificationRuleRuleOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreadedInput">isThreadedInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreaded">isThreaded</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isThreadedInput`<sup>Optional</sup> <a name="isThreadedInput" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreadedInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsThreadedInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `isThreaded`<sup>Required</sup> <a name="isThreaded" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreaded"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIsThreaded();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|MonitorNotificationRuleRuleOptions getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SensitiveDataScannerRule <a name="SensitiveDataScannerRule" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.Initializer"></a>
 
@@ -90,6 +90,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.resetSuppressions">ResetSuppressions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.resetTextReplacement">ResetTextReplacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.resetUseRecommendedSuppressions">ResetUseRecommendedSuppressions</a></code> | *No description.* |
 
 ---
 
@@ -516,6 +517,12 @@ private void ResetTags()
 private void ResetTextReplacement()
 ```
 
+##### `ResetUseRecommendedSuppressions` <a name="ResetUseRecommendedSuppressions" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.resetUseRecommendedSuppressions"></a>
+
+```csharp
+private void ResetUseRecommendedSuppressions()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -619,7 +626,7 @@ The construct id used in the generated config for the SensitiveDataScannerRule t
 
 The id of the existing SensitiveDataScannerRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -666,6 +673,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.suppressionsInput">SuppressionsInput</a></code> | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleSuppressions">SensitiveDataScannerRuleSuppressions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.textReplacementInput">TextReplacementInput</a></code> | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleTextReplacement">SensitiveDataScannerRuleTextReplacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.useRecommendedSuppressionsInput">UseRecommendedSuppressionsInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.excludedNamespaces">ExcludedNamespaces</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.groupId">GroupId</a></code> | <code>string</code> | *No description.* |
@@ -677,6 +685,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.priority">Priority</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.standardPatternId">StandardPatternId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.useRecommendedSuppressions">UseRecommendedSuppressions</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -992,6 +1001,16 @@ public SensitiveDataScannerRuleTextReplacement TextReplacementInput { get; }
 
 ---
 
+##### `UseRecommendedSuppressionsInput`<sup>Optional</sup> <a name="UseRecommendedSuppressionsInput" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.useRecommendedSuppressionsInput"></a>
+
+```csharp
+public bool|IResolvable UseRecommendedSuppressionsInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.description"></a>
 
 ```csharp
@@ -1102,6 +1121,16 @@ public string[] Tags { get; }
 
 ---
 
+##### `UseRecommendedSuppressions`<sup>Required</sup> <a name="UseRecommendedSuppressions" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRule.property.useRecommendedSuppressions"></a>
+
+```csharp
+public bool|IResolvable UseRecommendedSuppressions { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1150,7 +1179,8 @@ new SensitiveDataScannerRuleConfig {
     string StandardPatternId = null,
     SensitiveDataScannerRuleSuppressions Suppressions = null,
     string[] Tags = null,
-    SensitiveDataScannerRuleTextReplacement TextReplacement = null
+    SensitiveDataScannerRuleTextReplacement TextReplacement = null,
+    bool|IResolvable UseRecommendedSuppressions = null
 };
 ```
 
@@ -1168,7 +1198,7 @@ new SensitiveDataScannerRuleConfig {
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.groupId">GroupId</a></code> | <code>string</code> | Id of the scanning group the rule belongs to. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.description">Description</a></code> | <code>string</code> | Description of the rule. Computed when `standard_pattern_id` is set and this field is omitted. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.excludedNamespaces">ExcludedNamespaces</a></code> | <code>string[]</code> | Attributes excluded from the scan. If namespaces is provided, it has to be a sub-path of the namespaces array. |
-| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}. |
+| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.includedKeywordConfiguration">IncludedKeywordConfiguration</a></code> | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleIncludedKeywordConfiguration">SensitiveDataScannerRuleIncludedKeywordConfiguration</a></code> | included_keyword_configuration block. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.isEnabled">IsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether or not the rule is enabled. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.name">Name</a></code> | <code>string</code> | Name of the rule. |
@@ -1179,6 +1209,7 @@ new SensitiveDataScannerRuleConfig {
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.suppressions">Suppressions</a></code> | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleSuppressions">SensitiveDataScannerRuleSuppressions</a></code> | suppressions block. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.tags">Tags</a></code> | <code>string[]</code> | List of tags. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.textReplacement">TextReplacement</a></code> | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleTextReplacement">SensitiveDataScannerRuleTextReplacement</a></code> | text_replacement block. |
+| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.useRecommendedSuppressions">UseRecommendedSuppressions</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether to use the standard pattern's recommended suppressions. |
 
 ---
 
@@ -1262,7 +1293,7 @@ public string GroupId { get; set; }
 
 Id of the scanning group the rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#group_id SensitiveDataScannerRule#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#group_id SensitiveDataScannerRule#group_id}
 
 ---
 
@@ -1276,7 +1307,7 @@ public string Description { get; set; }
 
 Description of the rule. Computed when `standard_pattern_id` is set and this field is omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#description SensitiveDataScannerRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#description SensitiveDataScannerRule#description}
 
 ---
 
@@ -1290,7 +1321,7 @@ public string[] ExcludedNamespaces { get; set; }
 
 Attributes excluded from the scan. If namespaces is provided, it has to be a sub-path of the namespaces array.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#excluded_namespaces SensitiveDataScannerRule#excluded_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#excluded_namespaces SensitiveDataScannerRule#excluded_namespaces}
 
 ---
 
@@ -1302,7 +1333,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1319,7 +1350,7 @@ public SensitiveDataScannerRuleIncludedKeywordConfiguration IncludedKeywordConfi
 
 included_keyword_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#included_keyword_configuration SensitiveDataScannerRule#included_keyword_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#included_keyword_configuration SensitiveDataScannerRule#included_keyword_configuration}
 
 ---
 
@@ -1333,7 +1364,7 @@ public bool|IResolvable IsEnabled { get; set; }
 
 Whether or not the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#is_enabled SensitiveDataScannerRule#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#is_enabled SensitiveDataScannerRule#is_enabled}
 
 ---
 
@@ -1347,7 +1378,7 @@ public string Name { get; set; }
 
 Name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#name SensitiveDataScannerRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#name SensitiveDataScannerRule#name}
 
 ---
 
@@ -1363,7 +1394,7 @@ Attributes included in the scan.
 
 If namespaces is empty or missing, all attributes except excluded_namespaces are scanned. If both are missing the whole event is scanned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#namespaces SensitiveDataScannerRule#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#namespaces SensitiveDataScannerRule#namespaces}
 
 ---
 
@@ -1377,7 +1408,7 @@ public string Pattern { get; set; }
 
 Not included if there is a relationship to a standard pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#pattern SensitiveDataScannerRule#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#pattern SensitiveDataScannerRule#pattern}
 
 ---
 
@@ -1393,7 +1424,7 @@ Priority level of the rule (optional).
 
 Used to order sensitive data discovered in the sds summary page. It must be between 1 and 5 (1 being the most important).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#priority SensitiveDataScannerRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#priority SensitiveDataScannerRule#priority}
 
 ---
 
@@ -1407,7 +1438,7 @@ public string StandardPatternId { get; set; }
 
 Id of the standard pattern the rule refers to. If provided, then pattern must not be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#standard_pattern_id SensitiveDataScannerRule#standard_pattern_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#standard_pattern_id SensitiveDataScannerRule#standard_pattern_id}
 
 ---
 
@@ -1421,7 +1452,7 @@ public SensitiveDataScannerRuleSuppressions Suppressions { get; set; }
 
 suppressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#suppressions SensitiveDataScannerRule#suppressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#suppressions SensitiveDataScannerRule#suppressions}
 
 ---
 
@@ -1435,7 +1466,7 @@ public string[] Tags { get; set; }
 
 List of tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#tags SensitiveDataScannerRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#tags SensitiveDataScannerRule#tags}
 
 ---
 
@@ -1449,7 +1480,23 @@ public SensitiveDataScannerRuleTextReplacement TextReplacement { get; set; }
 
 text_replacement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#text_replacement SensitiveDataScannerRule#text_replacement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#text_replacement SensitiveDataScannerRule#text_replacement}
+
+---
+
+##### `UseRecommendedSuppressions`<sup>Optional</sup> <a name="UseRecommendedSuppressions" id="@cdktn/provider-datadog.sensitiveDataScannerRule.SensitiveDataScannerRuleConfig.property.useRecommendedSuppressions"></a>
+
+```csharp
+public bool|IResolvable UseRecommendedSuppressions { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Whether to use the standard pattern's recommended suppressions.
+
+Requires `standard_pattern_id` when true. Defaults to `true` for new standard-pattern rules. When omitted for an existing or imported rule, preserves the current API choice. Custom suppressions are managed separately in the `suppressions` block and are retained when this setting changes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#use_recommended_suppressions SensitiveDataScannerRule#use_recommended_suppressions}
 
 ---
 
@@ -1487,7 +1534,7 @@ Number of characters before the match to find a keyword validating the match.
 
 It must be between 1 and 50 (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#character_count SensitiveDataScannerRule#character_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#character_count SensitiveDataScannerRule#character_count}
 
 ---
 
@@ -1503,7 +1550,7 @@ Keyword list that is checked during scanning in order to validate a match.
 
 The number of keywords in the list must be lower than or equal to 30.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#keywords SensitiveDataScannerRule#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#keywords SensitiveDataScannerRule#keywords}
 
 ---
 
@@ -1541,7 +1588,7 @@ public string[] EndsWith { get; set; }
 
 Any match that ends with a value in this list will be suppressed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#ends_with SensitiveDataScannerRule#ends_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#ends_with SensitiveDataScannerRule#ends_with}
 
 ---
 
@@ -1555,7 +1602,7 @@ public string[] ExactMatch { get; set; }
 
 Any match that appears in this list will be suppressed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#exact_match SensitiveDataScannerRule#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#exact_match SensitiveDataScannerRule#exact_match}
 
 ---
 
@@ -1569,7 +1616,7 @@ public string[] StartsWith { get; set; }
 
 Any match that starts with a value in this list will be suppressed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#starts_with SensitiveDataScannerRule#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#starts_with SensitiveDataScannerRule#starts_with}
 
 ---
 
@@ -1611,7 +1658,7 @@ Type of the replacement text.
 
 None means no replacement. hash means the data will be stubbed. replacement_string means that one can chose a text to replace the data. partial_replacement_from_beginning allows a user to partially replace the data from the beginning, and partial_replacement_from_end on the other hand, allows to replace data from the end. Valid values are `none`, `hash`, `replacement_string`, `partial_replacement_from_beginning`, `partial_replacement_from_end`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#type SensitiveDataScannerRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#type SensitiveDataScannerRule#type}
 
 ---
 
@@ -1625,7 +1672,7 @@ public double NumberOfChars { get; set; }
 
 Required if type == 'partial_replacement_from_beginning' or 'partial_replacement_from_end'. It must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#number_of_chars SensitiveDataScannerRule#number_of_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#number_of_chars SensitiveDataScannerRule#number_of_chars}
 
 ---
 
@@ -1639,7 +1686,7 @@ public string ReplacementString { get; set; }
 
 Required if type == 'replacement_string'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#replacement_string SensitiveDataScannerRule#replacement_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#replacement_string SensitiveDataScannerRule#replacement_string}
 
 ---
 
@@ -1655,7 +1702,7 @@ Only valid when type == `replacement_string`.
 
 When enabled, matches can be unmasked in logs by users with ‘Data Scanner Unmask’ permission. As a security best practice, avoid masking for highly-sensitive, long-lived data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/sensitive_data_scanner_rule#should_save_match SensitiveDataScannerRule#should_save_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/sensitive_data_scanner_rule#should_save_match SensitiveDataScannerRule#should_save_match}
 
 ---
 

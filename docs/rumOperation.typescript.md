@@ -4,7 +4,7 @@
 
 ### RumOperation <a name="RumOperation" id="@cdktn/provider-datadog.rumOperation.RumOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation datadog_rum_operation}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation datadog_rum_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumOperation.RumOperation.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the RumOperation to import.
 
 The id of the existing RumOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly applicationId: string;
 
 ID of the RUM application the operation belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#application_id RumOperation#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#application_id RumOperation#application_id}
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly name: string;
 
 Unique name of the operation within the organization. Must not contain spaces. Changing it recreates the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#name RumOperation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#name RumOperation#name}
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly steps: IResolvable | RumOperationSteps[];
 
 Ordered steps defining how RUM events drive the operation lifecycle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#steps RumOperation#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#steps RumOperation#steps}
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly category: string;
 
 Category of the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#category RumOperation#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#category RumOperation#category}
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly description: string;
 
 Description of the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#description RumOperation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#description RumOperation#description}
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly displayName: string;
 
 Human readable name of the operation. Defaults to `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#display_name RumOperation#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#display_name RumOperation#display_name}
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly tags: string[];
 
 Tags attached to the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#tags RumOperation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#tags RumOperation#tags}
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly type: string;
 
 Lifecycle transition triggered by this step. Valid values are `start`, `update`, `stop`, `error`, `abandoned`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#type RumOperation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#type RumOperation#type}
 
 ---
 
@@ -1133,7 +1133,7 @@ public readonly composite: RumOperationStepsComposite;
 
 Rule combining several predicates into this step. Exactly one of `nodes` or `composite` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#composite RumOperation#composite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#composite RumOperation#composite}
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly nodes: IResolvable | RumOperationStepsNodes[];
 
 Queries matched by this step. Exactly one of `nodes` or `composite` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#nodes RumOperation#nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#nodes RumOperation#nodes}
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly kind: string;
 
 How the predicates combine. Valid values are `all_of`, `in_order`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#kind RumOperation#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#kind RumOperation#kind}
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly predicates: IResolvable | RumOperationStepsCompositePredicates[]
 
 Predicates combined by the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#predicates RumOperation#predicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#predicates RumOperation#predicates}
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly maxWindowMs: number;
 
 Maximum time window, in milliseconds, in which all predicates must match. Value must be between 0 and 1800000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#max_window_ms RumOperation#max_window_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#max_window_ms RumOperation#max_window_ms}
 
 ---
 
@@ -1241,7 +1241,7 @@ public readonly query: string;
 
 RUM event search query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#query RumOperation#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#query RumOperation#query}
 
 ---
 
@@ -1273,7 +1273,7 @@ public readonly query: string;
 
 RUM event search query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#query RumOperation#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#query RumOperation#query}
 
 ---
 

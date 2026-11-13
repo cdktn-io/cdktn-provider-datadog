@@ -4,7 +4,7 @@
 
 ### RumApplication <a name="RumApplication" id="@cdktn/provider-datadog.rumApplication.RumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumApplication.RumApplication.Initializer"></a>
 
@@ -22,6 +22,7 @@ rumApplication.RumApplication(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  create_default_retention_filters: bool | IResolvable = None,
   product_analytics_retention_state: str = None,
   rum_event_processing_state: str = None,
   type: str = None
@@ -40,9 +41,10 @@ rumApplication.RumApplication(
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the RUM application. |
-| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`. |
-| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`. |
-| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.createDefaultRetentionFilters">create_default_retention_filters</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to create the default retention filters (`Sessions with errors` and `Sessions`, both at 100%) when the application is created. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | Controls the retention policy for Product Analytics data derived from RUM events. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | Configures which RUM events are processed and stored for the application. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of the RUM application. |
 
 ---
 
@@ -112,7 +114,19 @@ Must be unique amongst siblings in the same scope
 
 Name of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#name RumApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#name RumApplication#name}
+
+---
+
+##### `create_default_retention_filters`<sup>Optional</sup> <a name="create_default_retention_filters" id="@cdktn/provider-datadog.rumApplication.RumApplication.Initializer.parameter.createDefaultRetentionFilters"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to create the default retention filters (`Sessions with errors` and `Sessions`, both at 100%) when the application is created.
+
+Defaults to `true` on the API side. Set to `false` to create the application without them, such as when you manage its retention filters in the same configuration. Permanent retention filters are always created. This setting only applies during application creation. Changing it afterward doesn't add or remove filters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#create_default_retention_filters RumApplication#create_default_retention_filters}
 
 ---
 
@@ -120,9 +134,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`.
+Controls the retention policy for Product Analytics data derived from RUM events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
+`MAX` enables Product Analytics for the application, and `NONE` disables it. If not set, Datadog picks the value when the application is created. Valid values are `MAX`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
 
 ---
 
@@ -130,9 +146,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
+Configures which RUM events are processed and stored for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
+`ALL` enables RUM, `ERROR_FOCUSED_MODE` uses the application for Error Tracking only, without RUM, and `NONE` disables RUM event processing. If not set, Datadog uses `ALL` when the application is created. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
 
 ---
 
@@ -140,9 +158,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
+Type of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#type RumApplication#type}
+Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`, `roku`, `electron`, `unity`, `kotlin-multiplatform`. Defaults to `"browser"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 
@@ -174,6 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.resetCreateDefaultRetentionFilters">reset_create_default_retention_filters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.resetProductAnalyticsRetentionState">reset_product_analytics_retention_state</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.resetRumEventProcessingState">reset_rum_event_processing_state</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.resetType">reset_type</a></code> | *No description.* |
@@ -528,6 +549,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_create_default_retention_filters` <a name="reset_create_default_retention_filters" id="@cdktn/provider-datadog.rumApplication.RumApplication.resetCreateDefaultRetentionFilters"></a>
+
+```python
+def reset_create_default_retention_filters() -> None
+```
+
 ##### `reset_product_analytics_retention_state` <a name="reset_product_analytics_retention_state" id="@cdktn/provider-datadog.rumApplication.RumApplication.resetProductAnalyticsRetentionState"></a>
 
 ```python
@@ -660,7 +687,7 @@ The construct id used in the generated config for the RumApplication to import.
 
 The id of the existing RumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,10 +720,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.apiKeyId">api_key_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.clientToken">client_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.createDefaultRetentionFiltersInput">create_default_retention_filters_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.productAnalyticsRetentionStateInput">product_analytics_retention_state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.rumEventProcessingStateInput">rum_event_processing_state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.createDefaultRetentionFilters">create_default_retention_filters</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplication.property.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | *No description.* |
@@ -876,6 +905,16 @@ id: str
 
 ---
 
+##### `create_default_retention_filters_input`<sup>Optional</sup> <a name="create_default_retention_filters_input" id="@cdktn/provider-datadog.rumApplication.RumApplication.property.createDefaultRetentionFiltersInput"></a>
+
+```python
+create_default_retention_filters_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.rumApplication.RumApplication.property.nameInput"></a>
 
 ```python
@@ -913,6 +952,16 @@ type_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `create_default_retention_filters`<sup>Required</sup> <a name="create_default_retention_filters" id="@cdktn/provider-datadog.rumApplication.RumApplication.property.createDefaultRetentionFilters"></a>
+
+```python
+create_default_retention_filters: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -992,6 +1041,7 @@ rumApplication.RumApplicationConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  create_default_retention_filters: bool | IResolvable = None,
   product_analytics_retention_state: str = None,
   rum_event_processing_state: str = None,
   type: str = None
@@ -1010,9 +1060,10 @@ rumApplication.RumApplicationConfig(
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.name">name</a></code> | <code>str</code> | Name of the RUM application. |
-| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`. |
-| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`. |
-| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.type">type</a></code> | <code>str</code> | Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.createDefaultRetentionFilters">create_default_retention_filters</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to create the default retention filters (`Sessions with errors` and `Sessions`, both at 100%) when the application is created. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.productAnalyticsRetentionState">product_analytics_retention_state</a></code> | <code>str</code> | Controls the retention policy for Product Analytics data derived from RUM events. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.rumEventProcessingState">rum_event_processing_state</a></code> | <code>str</code> | Configures which RUM events are processed and stored for the application. |
+| <code><a href="#@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.type">type</a></code> | <code>str</code> | Type of the RUM application. |
 
 ---
 
@@ -1096,7 +1147,23 @@ name: str
 
 Name of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#name RumApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#name RumApplication#name}
+
+---
+
+##### `create_default_retention_filters`<sup>Optional</sup> <a name="create_default_retention_filters" id="@cdktn/provider-datadog.rumApplication.RumApplicationConfig.property.createDefaultRetentionFilters"></a>
+
+```python
+create_default_retention_filters: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to create the default retention filters (`Sessions with errors` and `Sessions`, both at 100%) when the application is created.
+
+Defaults to `true` on the API side. Set to `false` to create the application without them, such as when you manage its retention filters in the same configuration. Permanent retention filters are always created. This setting only applies during application creation. Changing it afterward doesn't add or remove filters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#create_default_retention_filters RumApplication#create_default_retention_filters}
 
 ---
 
@@ -1108,9 +1175,11 @@ product_analytics_retention_state: str
 
 - *Type:* str
 
-Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`.
+Controls the retention policy for Product Analytics data derived from RUM events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
+`MAX` enables Product Analytics for the application, and `NONE` disables it. If not set, Datadog picks the value when the application is created. Valid values are `MAX`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
 
 ---
 
@@ -1122,9 +1191,11 @@ rum_event_processing_state: str
 
 - *Type:* str
 
-Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
+Configures which RUM events are processed and stored for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
+`ALL` enables RUM, `ERROR_FOCUSED_MODE` uses the application for Error Tracking only, without RUM, and `NONE` disables RUM event processing. If not set, Datadog uses `ALL` when the application is created. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
 
 ---
 
@@ -1136,9 +1207,11 @@ type: str
 
 - *Type:* str
 
-Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
+Type of the RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#type RumApplication#type}
+Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`, `roku`, `electron`, `unity`, `kotlin-multiplatform`. Defaults to `"browser"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 

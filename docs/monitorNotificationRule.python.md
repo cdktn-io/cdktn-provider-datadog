@@ -4,7 +4,7 @@
 
 ### MonitorNotificationRule <a name="MonitorNotificationRule" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer"></a>
 
@@ -25,7 +25,8 @@ monitorNotificationRule.MonitorNotificationRule(
   bundle_config: MonitorNotificationRuleBundleConfig = None,
   conditional_recipients: MonitorNotificationRuleConditionalRecipients = None,
   filter: MonitorNotificationRuleFilter = None,
-  recipients: typing.List[str] = None
+  recipients: typing.List[str] = None,
+  rule_options: MonitorNotificationRuleRuleOptions = None
 )
 ```
 
@@ -45,6 +46,7 @@ monitorNotificationRule.MonitorNotificationRule(
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.conditionalRecipients">conditional_recipients</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients">MonitorNotificationRuleConditionalRecipients</a></code> | conditional_recipients block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a></code> | filter block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.recipients">recipients</a></code> | <code>typing.List[str]</code> | List of recipients to notify. Cannot be used with `conditional_recipients`. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.ruleOptions">rule_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the monitor notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 bundle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 conditional_recipients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 
 ---
 
@@ -154,7 +156,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 List of recipients to notify. Cannot be used with `conditional_recipients`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+
+---
+
+##### `rule_options`<sup>Optional</sup> <a name="rule_options" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer.parameter.ruleOptions"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
+
+Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#rule_options MonitorNotificationRule#rule_options}
 
 ---
 
@@ -189,10 +201,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putBundleConfig">put_bundle_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putConditionalRecipients">put_conditional_recipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putFilter">put_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putRuleOptions">put_rule_options</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetBundleConfig">reset_bundle_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetConditionalRecipients">reset_conditional_recipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetRecipients">reset_recipients</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetRuleOptions">reset_rule_options</a></code> | *No description.* |
 
 ---
 
@@ -558,7 +572,7 @@ def put_bundle_config(
 
 Duration of the bundling period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
 
 ---
 
@@ -577,7 +591,7 @@ def put_conditional_recipients(
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
 
 ---
 
@@ -587,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If none of the `conditions` applied, `fallback_recipients` will get notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
 
 ---
 
@@ -606,7 +620,7 @@ def put_filter(
 
 A scope expression composed of `key:value` pairs (such as `env:prod`) with boolean operators (AND, OR, NOT) and parentheses for grouping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
 
 ---
 
@@ -616,7 +630,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tag key:value pairs (e.g. team:product). All tags must match (AND semantics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+
+---
+
+##### `put_rule_options` <a name="put_rule_options" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putRuleOptions"></a>
+
+```python
+def put_rule_options(
+  is_threaded: bool | IResolvable
+) -> None
+```
+
+###### `is_threaded`<sup>Required</sup> <a name="is_threaded" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.putRuleOptions.parameter.isThreaded"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether notifications from this rule are threaded.
+
+When `true`, follow-up notifications for the same monitor alert are posted in Slack as replies to the first notification. Cannot be `true` when `bundle_config` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#is_threaded MonitorNotificationRule#is_threaded}
 
 ---
 
@@ -642,6 +676,12 @@ def reset_filter() -> None
 
 ```python
 def reset_recipients() -> None
+```
+
+##### `reset_rule_options` <a name="reset_rule_options" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.resetRuleOptions"></a>
+
+```python
+def reset_rule_options() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -758,7 +798,7 @@ The construct id used in the generated config for the MonitorNotificationRule to
 
 The id of the existing MonitorNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -792,11 +832,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.conditionalRecipients">conditional_recipients</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipientsOutputReference">MonitorNotificationRuleConditionalRecipientsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilterOutputReference">MonitorNotificationRuleFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptions">rule_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference">MonitorNotificationRuleRuleOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.bundleConfigInput">bundle_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleBundleConfig">MonitorNotificationRuleBundleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.conditionalRecipientsInput">conditional_recipients_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients">MonitorNotificationRuleConditionalRecipients</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.filterInput">filter_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.recipientsInput">recipients_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptionsInput">rule_options_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.recipients">recipients</a></code> | <code>typing.List[str]</code> | *No description.* |
 
@@ -984,6 +1026,16 @@ id: str
 
 ---
 
+##### `rule_options`<sup>Required</sup> <a name="rule_options" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptions"></a>
+
+```python
+rule_options: MonitorNotificationRuleRuleOptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference">MonitorNotificationRuleRuleOptionsOutputReference</a>
+
+---
+
 ##### `bundle_config_input`<sup>Optional</sup> <a name="bundle_config_input" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.bundleConfigInput"></a>
 
 ```python
@@ -1031,6 +1083,16 @@ recipients_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `rule_options_input`<sup>Optional</sup> <a name="rule_options_input" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.property.ruleOptionsInput"></a>
+
+```python
+rule_options_input: IResolvable | MonitorNotificationRuleRuleOptions
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
 
 ---
 
@@ -1104,7 +1166,7 @@ duration: typing.Union[int, float]
 
 Duration of the bundling period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
 
 ---
 
@@ -1140,7 +1202,7 @@ conditions: IResolvable | typing.List[MonitorNotificationRuleConditionalRecipien
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
 
 ---
 
@@ -1154,7 +1216,7 @@ fallback_recipients: typing.List[str]
 
 If none of the `conditions` applied, `fallback_recipients` will get notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
 
 ---
 
@@ -1192,7 +1254,7 @@ A list of recipients to notify.
 
 Uses the same format as the monitor message field. Must not start with an '@'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
 
 ---
 
@@ -1208,7 +1270,7 @@ Defines the condition under which the recipients are notified.
 
 Supported formats: Monitor status condition using `transition_type:<status>` (for example `transition_type:is_alert`) or a single tag `key:value pair` (for example `env:prod`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
 
 ---
 
@@ -1231,7 +1293,8 @@ monitorNotificationRule.MonitorNotificationRuleConfig(
   bundle_config: MonitorNotificationRuleBundleConfig = None,
   conditional_recipients: MonitorNotificationRuleConditionalRecipients = None,
   filter: MonitorNotificationRuleFilter = None,
-  recipients: typing.List[str] = None
+  recipients: typing.List[str] = None,
+  rule_options: MonitorNotificationRuleRuleOptions = None
 )
 ```
 
@@ -1251,6 +1314,7 @@ monitorNotificationRule.MonitorNotificationRuleConfig(
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.conditionalRecipients">conditional_recipients</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients">MonitorNotificationRuleConditionalRecipients</a></code> | conditional_recipients block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a></code> | filter block. |
 | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.recipients">recipients</a></code> | <code>typing.List[str]</code> | List of recipients to notify. Cannot be used with `conditional_recipients`. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.ruleOptions">rule_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept. |
 
 ---
 
@@ -1334,7 +1398,7 @@ name: str
 
 The name of the monitor notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 
 ---
 
@@ -1348,7 +1412,7 @@ bundle_config: MonitorNotificationRuleBundleConfig
 
 bundle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
 
 ---
 
@@ -1362,7 +1426,7 @@ conditional_recipients: MonitorNotificationRuleConditionalRecipients
 
 conditional_recipients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
 
 ---
 
@@ -1376,7 +1440,7 @@ filter: MonitorNotificationRuleFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 
 ---
 
@@ -1390,7 +1454,21 @@ recipients: typing.List[str]
 
 List of recipients to notify. Cannot be used with `conditional_recipients`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+
+---
+
+##### `rule_options`<sup>Optional</sup> <a name="rule_options" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.property.ruleOptions"></a>
+
+```python
+rule_options: MonitorNotificationRuleRuleOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
+
+Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#rule_options MonitorNotificationRule#rule_options}
 
 ---
 
@@ -1426,7 +1504,7 @@ scope: str
 
 A scope expression composed of `key:value` pairs (such as `env:prod`) with boolean operators (AND, OR, NOT) and parentheses for grouping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
 
 ---
 
@@ -1440,7 +1518,43 @@ tags: typing.List[str]
 
 A list of tag key:value pairs (e.g. team:product). All tags must match (AND semantics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+
+---
+
+### MonitorNotificationRuleRuleOptions <a name="MonitorNotificationRuleRuleOptions" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor_notification_rule
+
+monitorNotificationRule.MonitorNotificationRuleRuleOptions(
+  is_threaded: bool | IResolvable
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions.property.isThreaded">is_threaded</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether notifications from this rule are threaded. |
+
+---
+
+##### `is_threaded`<sup>Required</sup> <a name="is_threaded" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions.property.isThreaded"></a>
+
+```python
+is_threaded: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether notifications from this rule are threaded.
+
+When `true`, follow-up notifications for the same monitor alert are posted in Slack as replies to the first notification. Cannot be `true` when `bundle_config` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#is_threaded MonitorNotificationRule#is_threaded}
 
 ---
 
@@ -2932,6 +3046,302 @@ internal_value: IResolvable | MonitorNotificationRuleFilter
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter">MonitorNotificationRuleFilter</a>
+
+---
+
+
+### MonitorNotificationRuleRuleOptionsOutputReference <a name="MonitorNotificationRuleRuleOptionsOutputReference" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor_notification_rule
+
+monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreadedInput">is_threaded_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreaded">is_threaded</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_threaded_input`<sup>Optional</sup> <a name="is_threaded_input" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreadedInput"></a>
+
+```python
+is_threaded_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `is_threaded`<sup>Required</sup> <a name="is_threaded" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.isThreaded"></a>
+
+```python
+is_threaded: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptionsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | MonitorNotificationRuleRuleOptions
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleRuleOptions">MonitorNotificationRuleRuleOptions</a>
 
 ---
 

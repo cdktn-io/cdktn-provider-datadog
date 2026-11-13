@@ -4,7 +4,7 @@
 
 ### RumOperation <a name="RumOperation" id="@cdktn/provider-datadog.rumOperation.RumOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation datadog_rum_operation}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation datadog_rum_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumOperation.RumOperation.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the RUM application the operation belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#application_id RumOperation#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#application_id RumOperation#application_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Unique name of the operation within the organization. Must not contain spaces. Changing it recreates the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#name RumOperation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#name RumOperation#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Ordered steps defining how RUM events drive the operation lifecycle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#steps RumOperation#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#steps RumOperation#steps}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Category of the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#category RumOperation#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#category RumOperation#category}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Description of the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#description RumOperation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#description RumOperation#description}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Human readable name of the operation. Defaults to `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#display_name RumOperation#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#display_name RumOperation#display_name}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Tags attached to the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#tags RumOperation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#tags RumOperation#tags}
 
 ---
 
@@ -666,7 +666,7 @@ The construct id used in the generated config for the RumOperation to import.
 
 The id of the existing RumOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1152,7 +1152,7 @@ public java.lang.String getApplicationId();
 
 ID of the RUM application the operation belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#application_id RumOperation#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#application_id RumOperation#application_id}
 
 ---
 
@@ -1166,7 +1166,7 @@ public java.lang.String getName();
 
 Unique name of the operation within the organization. Must not contain spaces. Changing it recreates the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#name RumOperation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#name RumOperation#name}
 
 ---
 
@@ -1180,7 +1180,7 @@ public IResolvable|java.util.List<RumOperationSteps> getSteps();
 
 Ordered steps defining how RUM events drive the operation lifecycle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#steps RumOperation#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#steps RumOperation#steps}
 
 ---
 
@@ -1194,7 +1194,7 @@ public java.lang.String getCategory();
 
 Category of the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#category RumOperation#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#category RumOperation#category}
 
 ---
 
@@ -1208,7 +1208,7 @@ public java.lang.String getDescription();
 
 Description of the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#description RumOperation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#description RumOperation#description}
 
 ---
 
@@ -1222,7 +1222,7 @@ public java.lang.String getDisplayName();
 
 Human readable name of the operation. Defaults to `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#display_name RumOperation#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#display_name RumOperation#display_name}
 
 ---
 
@@ -1236,7 +1236,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags attached to the operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#tags RumOperation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#tags RumOperation#tags}
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getType();
 
 Lifecycle transition triggered by this step. Valid values are `start`, `update`, `stop`, `error`, `abandoned`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#type RumOperation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#type RumOperation#type}
 
 ---
 
@@ -1288,7 +1288,7 @@ public RumOperationStepsComposite getComposite();
 
 Rule combining several predicates into this step. Exactly one of `nodes` or `composite` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#composite RumOperation#composite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#composite RumOperation#composite}
 
 ---
 
@@ -1302,7 +1302,7 @@ public IResolvable|java.util.List<RumOperationStepsNodes> getNodes();
 
 Queries matched by this step. Exactly one of `nodes` or `composite` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#nodes RumOperation#nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#nodes RumOperation#nodes}
 
 ---
 
@@ -1340,7 +1340,7 @@ public java.lang.String getKind();
 
 How the predicates combine. Valid values are `all_of`, `in_order`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#kind RumOperation#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#kind RumOperation#kind}
 
 ---
 
@@ -1354,7 +1354,7 @@ public IResolvable|java.util.List<RumOperationStepsCompositePredicates> getPredi
 
 Predicates combined by the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#predicates RumOperation#predicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#predicates RumOperation#predicates}
 
 ---
 
@@ -1368,7 +1368,7 @@ public java.lang.Number getMaxWindowMs();
 
 Maximum time window, in milliseconds, in which all predicates must match. Value must be between 0 and 1800000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#max_window_ms RumOperation#max_window_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#max_window_ms RumOperation#max_window_ms}
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.String getQuery();
 
 RUM event search query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#query RumOperation#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#query RumOperation#query}
 
 ---
 
@@ -1436,7 +1436,7 @@ public java.lang.String getQuery();
 
 RUM event search query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#query RumOperation#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#query RumOperation#query}
 
 ---
 
