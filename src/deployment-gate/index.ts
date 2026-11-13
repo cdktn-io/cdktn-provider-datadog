@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate
+// https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DeploymentGateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Enable Dry Run to test gate behavior without impacting deployments. The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
   */
   readonly dryRun?: boolean | cdktn.IResolvable;
   /**
   * The target environment (example: dev).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#env DeploymentGate#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#env DeploymentGate#env}
   */
   readonly env: string;
   /**
   * Unique name for multiple gates on the same service/environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
   */
   readonly identifier?: string;
   /**
   * The service name (example: transaction-backend).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#service DeploymentGate#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#service DeploymentGate#service}
   */
   readonly service: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
   */
   readonly rule?: DeploymentGateRule[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface DeploymentGateRuleOptionsMonitorIds {
   /**
   * Exact group names to evaluate; an empty list evaluates all groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#groups DeploymentGate#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#groups DeploymentGate#groups}
   */
   readonly groups: string[];
   /**
   * The monitor's decimal ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#id DeploymentGate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#id DeploymentGate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,49 +197,49 @@ export interface DeploymentGateRuleOptions {
   /**
   * Resources to include in faulty deployment detection. Mutually exclusive with excluded_resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#allowed_resources DeploymentGate#allowed_resources}
   */
   readonly allowedResources?: string[];
   /**
   * The duration for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
   */
   readonly duration?: number;
   /**
   * Resources to exclude from faulty deployment detection. Mutually exclusive with allowed_resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
   */
   readonly excludedResources?: string[];
   /**
   * Fail if a matching monitor group is in NO DATA state (API default: true).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#fail_on_no_data DeploymentGate#fail_on_no_data}
   */
   readonly failOnNoData?: boolean | cdktn.IResolvable;
   /**
   * Fail if no monitor groups are found (API default: false).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#fail_on_no_groups_found DeploymentGate#fail_on_no_groups_found}
   */
   readonly failOnNoGroupsFound?: boolean | cdktn.IResolvable;
   /**
   * Specific monitors to evaluate. Mutually exclusive with query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#monitor_ids DeploymentGate#monitor_ids}
   */
   readonly monitorIds?: DeploymentGateRuleOptionsMonitorIds[] | cdktn.IResolvable;
   /**
   * A query that selects the monitors to evaluate. Mutually exclusive with monitor_ids.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#query DeploymentGate#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#query DeploymentGate#query}
   */
   readonly query?: string;
   /**
   * Seconds to wait after deployment starts before evaluating monitors (API default: 0).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#warmup DeploymentGate#warmup}
   */
   readonly warmup?: number;
 }
@@ -538,25 +538,25 @@ export interface DeploymentGateRule {
   /**
   * Whether the rule is in dry run mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
   */
   readonly dryRun?: boolean | cdktn.IResolvable;
   /**
   * The rule name. Must be unique within the deployment gate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#name DeploymentGate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#name DeploymentGate#name}
   */
   readonly name: string;
   /**
   * The rule type (e.g., 'faulty_deployment_detection', 'monitor').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#type DeploymentGate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#type DeploymentGate#type}
   */
   readonly type: string;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#options DeploymentGate#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#options DeploymentGate#options}
   */
   readonly options?: DeploymentGateRuleOptions;
 }
@@ -758,7 +758,7 @@ export class DeploymentGateRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate datadog_deployment_gate}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate datadog_deployment_gate}
 */
 export class DeploymentGate extends cdktn.TerraformResource {
 
@@ -774,7 +774,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DeploymentGate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DeploymentGate to import
-  * @param importFromId The id of the existing DeploymentGate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DeploymentGate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DeploymentGate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -786,7 +786,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/deployment_gate datadog_deployment_gate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/deployment_gate datadog_deployment_gate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -797,7 +797,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_deployment_gate',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.27.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

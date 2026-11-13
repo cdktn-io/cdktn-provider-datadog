@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application
+// https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,39 @@ import * as cdktn from 'cdktn';
 
 export interface RumApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Whether to create the default retention filters (`Sessions with errors` and `Sessions`, both at 100%) when the application is created. Defaults to `true` on the API side. Set to `false` to create the application without them, such as when you manage its retention filters in the same configuration. Permanent retention filters are always created. This setting only applies during application creation. Changing it afterward doesn't add or remove filters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#create_default_retention_filters RumApplication#create_default_retention_filters}
+  */
+  readonly createDefaultRetentionFilters?: boolean | cdktn.IResolvable;
+  /**
   * Name of the RUM application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#name RumApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#name RumApplication#name}
   */
   readonly name: string;
   /**
-  * Controls the retention policy for Product Analytics data derived from RUM events. Valid values are `MAX`, `NONE`.
+  * Controls the retention policy for Product Analytics data derived from RUM events. `MAX` enables Product Analytics for the application, and `NONE` disables it. If not set, Datadog picks the value when the application is created. Valid values are `MAX`, `NONE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#product_analytics_retention_state RumApplication#product_analytics_retention_state}
   */
   readonly productAnalyticsRetentionState?: string;
   /**
-  * Configures which RUM events are processed and stored for the application. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
+  * Configures which RUM events are processed and stored for the application. `ALL` enables RUM, `ERROR_FOCUSED_MODE` uses the application for Error Tracking only, without RUM, and `NONE` disables RUM event processing. If not set, Datadog uses `ALL` when the application is created. Valid values are `ALL`, `ERROR_FOCUSED_MODE`, `NONE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#rum_event_processing_state RumApplication#rum_event_processing_state}
   */
   readonly rumEventProcessingState?: string;
   /**
-  * Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. Defaults to `"browser"`.
+  * Type of the RUM application. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`, `roku`, `electron`, `unity`, `kotlin-multiplatform`. Defaults to `"browser"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#type RumApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#type RumApplication#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application datadog_rum_application}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application datadog_rum_application}
 */
 export class RumApplication extends cdktn.TerraformResource {
 
@@ -55,7 +61,7 @@ export class RumApplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RumApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumApplication to import
-  * @param importFromId The id of the existing RumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +73,7 @@ export class RumApplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_application datadog_rum_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_application datadog_rum_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +84,7 @@ export class RumApplication extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_rum_application',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.27.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -89,6 +95,7 @@ export class RumApplication extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._createDefaultRetentionFilters = config.createDefaultRetentionFilters;
     this._name = config.name;
     this._productAnalyticsRetentionState = config.productAnalyticsRetentionState;
     this._rumEventProcessingState = config.rumEventProcessingState;
@@ -107,6 +114,22 @@ export class RumApplication extends cdktn.TerraformResource {
   // client_token - computed: true, optional: false, required: false
   public get clientToken() {
     return this.getStringAttribute('client_token');
+  }
+
+  // create_default_retention_filters - computed: false, optional: true, required: false
+  private _createDefaultRetentionFilters?: boolean | cdktn.IResolvable; 
+  public get createDefaultRetentionFilters() {
+    return this.getBooleanAttribute('create_default_retention_filters');
+  }
+  public set createDefaultRetentionFilters(value: boolean | cdktn.IResolvable) {
+    this._createDefaultRetentionFilters = value;
+  }
+  public resetCreateDefaultRetentionFilters() {
+    this._createDefaultRetentionFilters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createDefaultRetentionFiltersInput() {
+    return this._createDefaultRetentionFilters;
   }
 
   // id - computed: true, optional: false, required: false
@@ -181,6 +204,7 @@ export class RumApplication extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      create_default_retention_filters: cdktn.booleanToTerraform(this._createDefaultRetentionFilters),
       name: cdktn.stringToTerraform(this._name),
       product_analytics_retention_state: cdktn.stringToTerraform(this._productAnalyticsRetentionState),
       rum_event_processing_state: cdktn.stringToTerraform(this._rumEventProcessingState),
@@ -190,6 +214,12 @@ export class RumApplication extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      create_default_retention_filters: {
+        value: cdktn.booleanToHclTerraform(this._createDefaultRetentionFilters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       name: {
         value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,

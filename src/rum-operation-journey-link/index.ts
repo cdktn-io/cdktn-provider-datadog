@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link
+// https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface RumOperationJourneyLinkConfig extends cdktn.TerraformMetaArgume
   /**
   * ID of the journey.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link#journey_id RumOperationJourneyLink#journey_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link#journey_id RumOperationJourneyLink#journey_id}
   */
   readonly journeyId: string;
   /**
   * ID of the RUM operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link#operation_id RumOperationJourneyLink#operation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link#operation_id RumOperationJourneyLink#operation_id}
   */
   readonly operationId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link datadog_rum_operation_journey_link}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link datadog_rum_operation_journey_link}
 */
 export class RumOperationJourneyLink extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class RumOperationJourneyLink extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RumOperationJourneyLink resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumOperationJourneyLink to import
-  * @param importFromId The id of the existing RumOperationJourneyLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumOperationJourneyLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumOperationJourneyLink to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class RumOperationJourneyLink extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation_journey_link datadog_rum_operation_journey_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation_journey_link datadog_rum_operation_journey_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class RumOperationJourneyLink extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_rum_operation_journey_link',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.27.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

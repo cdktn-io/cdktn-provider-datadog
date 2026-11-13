@@ -22,7 +22,7 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.16(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))
+        version: 0.9.21(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))
       '@types/node':
         specifier: ^22
         version: 22.20.1
@@ -133,8 +133,8 @@ packages:
   '@cdktn/provider-generator@0.25.0':
     resolution: {integrity: sha512-vsfQt0WtVota9y4DFMF7F7HrD9n8EvJyjJ1B2480I8b23PJXTldNBvfWoy8tPYKPKxjMdrrNCwCdOufc0dGypQ==}
 
-  '@cdktn/provider-project@0.9.16':
-    resolution: {integrity: sha512-iutgAYfhBeSh1IjWJKwcld9g9VpwJA43ri2zSSfopFS3rsFAoeQbVvFtsDk71hTojE/pOg/9hS5tG67XNFVKAQ==}
+  '@cdktn/provider-project@0.9.21':
+    resolution: {integrity: sha512-AlGBIp6RjagS3w1vUV2tyn3yxJnzLdbGHhwHFBXsIPMybfAOOLiBehISpLPS9Oa0nshfC2watB7KMxhBhD0kvQ==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -893,8 +893,8 @@ packages:
   flatted@3.4.3:
     resolution: {integrity: sha512-/zipXxyO6rGvuNGDiULY9MvEGSkb2gaG4GGH4ygMi0ZZzyMHdUZBmntJmx5x1G2VuPytCwGN4xsJP6cw+sK+vQ==}
 
-  follow-redirects@1.16.1:
-    resolution: {integrity: sha512-FNvFGzoMLWmE6Yj9spb/zjd7yiNCHiAW9/Tg9CXrQ8wuu32HtlJOwWO11OJafl5FfY3DxTdQ0vj42zU1kvv5jg==}
+  follow-redirects@1.16.3:
+    resolution: {integrity: sha512-toOSoqN6d51Wjf1aOFJYcoVv1aND9rj/CwjLU0Vz40oDuSpWDayCeKe4JpL5NL0WdFvoOOCI3BRo69HahjbR1A==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -1967,7 +1967,7 @@ snapshots:
       ci-info: 4.4.0
       codemaker: 1.140.0
       cross-spawn: 7.0.6
-      follow-redirects: 1.16.1
+      follow-redirects: 1.16.3
       fs-extra: 11.4.0
       log4js: 6.9.1
       semver: 7.8.5
@@ -2033,7 +2033,7 @@ snapshots:
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.16(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))':
+  '@cdktn/provider-project@0.9.21(constructs@10.7.2)(projen@0.101.33(constructs@10.7.2))':
     dependencies:
       constructs: 10.7.2
       projen: 0.101.33(constructs@10.7.2)
@@ -2827,7 +2827,7 @@ snapshots:
 
   flatted@3.4.3: {}
 
-  follow-redirects@1.16.1: {}
+  follow-redirects@1.16.3: {}
 
   for-each@0.3.5:
     dependencies:

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,39 +15,138 @@ export interface MonitorNotificationRuleConfig extends cdktn.TerraformMetaArgume
   /**
   * The name of the monitor notification rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
   */
   readonly name: string;
   /**
   * List of recipients to notify. Cannot be used with `conditional_recipients`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
   */
   readonly recipients?: string[];
   /**
+  * Additional options for the monitor notification rule. If omitted, the value stored in Datadog is kept.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#rule_options MonitorNotificationRule#rule_options}
+  */
+  readonly ruleOptions?: MonitorNotificationRuleRuleOptions;
+  /**
   * bundle_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#bundle_config MonitorNotificationRule#bundle_config}
   */
   readonly bundleConfig?: MonitorNotificationRuleBundleConfig;
   /**
   * conditional_recipients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
   */
   readonly conditionalRecipients?: MonitorNotificationRuleConditionalRecipients;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
   */
   readonly filter?: MonitorNotificationRuleFilter;
+}
+export interface MonitorNotificationRuleRuleOptions {
+  /**
+  * Whether notifications from this rule are threaded. When `true`, follow-up notifications for the same monitor alert are posted in Slack as replies to the first notification. Cannot be `true` when `bundle_config` is set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#is_threaded MonitorNotificationRule#is_threaded}
+  */
+  readonly isThreaded: boolean | cdktn.IResolvable;
+}
+
+export function monitorNotificationRuleRuleOptionsToTerraform(struct?: MonitorNotificationRuleRuleOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    is_threaded: cdktn.booleanToTerraform(struct!.isThreaded),
+  }
+}
+
+
+export function monitorNotificationRuleRuleOptionsToHclTerraform(struct?: MonitorNotificationRuleRuleOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    is_threaded: {
+      value: cdktn.booleanToHclTerraform(struct!.isThreaded),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MonitorNotificationRuleRuleOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): MonitorNotificationRuleRuleOptions | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isThreaded !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isThreaded = this._isThreaded;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorNotificationRuleRuleOptions | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isThreaded = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isThreaded = value.isThreaded;
+    }
+  }
+
+  // is_threaded - computed: true, optional: false, required: true
+  private _isThreaded?: boolean | cdktn.IResolvable; 
+  public get isThreaded() {
+    return this.getBooleanAttribute('is_threaded');
+  }
+  public set isThreaded(value: boolean | cdktn.IResolvable) {
+    this._isThreaded = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isThreadedInput() {
+    return this._isThreaded;
+  }
 }
 export interface MonitorNotificationRuleBundleConfig {
   /**
   * Duration of the bundling period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#duration MonitorNotificationRule#duration}
   */
   readonly duration?: number;
 }
@@ -143,13 +242,13 @@ export interface MonitorNotificationRuleConditionalRecipientsConditions {
   /**
   * A list of recipients to notify. Uses the same format as the monitor message field. Must not start with an '@'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
   */
   readonly recipients: string[];
   /**
   * Defines the condition under which the recipients are notified. Supported formats: Monitor status condition using `transition_type:<status>` (for example `transition_type:is_alert`) or a single tag `key:value pair` (for example `env:prod`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
   */
   readonly scope: string;
 }
@@ -290,13 +389,13 @@ export interface MonitorNotificationRuleConditionalRecipients {
   /**
   * If none of the `conditions` applied, `fallback_recipients` will get notified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
   */
   readonly fallbackRecipients?: string[];
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
   */
   readonly conditions?: MonitorNotificationRuleConditionalRecipientsConditions[] | cdktn.IResolvable;
 }
@@ -421,13 +520,13 @@ export interface MonitorNotificationRuleFilter {
   /**
   * A scope expression composed of `key:value` pairs (such as `env:prod`) with boolean operators (AND, OR, NOT) and parentheses for grouping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
   */
   readonly scope?: string;
   /**
   * A list of tag key:value pairs (e.g. team:product). All tags must match (AND semantics).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
   */
   readonly tags?: string[];
 }
@@ -550,7 +649,7 @@ export class MonitorNotificationRuleFilterOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}
 */
 export class MonitorNotificationRule extends cdktn.TerraformResource {
 
@@ -566,7 +665,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitorNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorNotificationRule to import
-  * @param importFromId The id of the existing MonitorNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -578,7 +677,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -589,7 +688,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_monitor_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.27.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -602,6 +701,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
     });
     this._name = config.name;
     this._recipients = config.recipients;
+    this._ruleOptions.internalValue = config.ruleOptions;
     this._bundleConfig.internalValue = config.bundleConfig;
     this._conditionalRecipients.internalValue = config.conditionalRecipients;
     this._filter.internalValue = config.filter;
@@ -643,6 +743,22 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get recipientsInput() {
     return this._recipients;
+  }
+
+  // rule_options - computed: true, optional: true, required: false
+  private _ruleOptions = new MonitorNotificationRuleRuleOptionsOutputReference(this, "rule_options");
+  public get ruleOptions() {
+    return this._ruleOptions;
+  }
+  public putRuleOptions(value: MonitorNotificationRuleRuleOptions) {
+    this._ruleOptions.internalValue = value;
+  }
+  public resetRuleOptions() {
+    this._ruleOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleOptionsInput() {
+    return this._ruleOptions.internalValue;
   }
 
   // bundle_config - computed: false, optional: true, required: false
@@ -701,6 +817,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
     return {
       name: cdktn.stringToTerraform(this._name),
       recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(this._recipients),
+      rule_options: monitorNotificationRuleRuleOptionsToTerraform(this._ruleOptions.internalValue),
       bundle_config: monitorNotificationRuleBundleConfigToTerraform(this._bundleConfig.internalValue),
       conditional_recipients: monitorNotificationRuleConditionalRecipientsToTerraform(this._conditionalRecipients.internalValue),
       filter: monitorNotificationRuleFilterToTerraform(this._filter.internalValue),
@@ -720,6 +837,12 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      rule_options: {
+        value: monitorNotificationRuleRuleOptionsToHclTerraform(this._ruleOptions.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MonitorNotificationRuleRuleOptions",
       },
       bundle_config: {
         value: monitorNotificationRuleBundleConfigToHclTerraform(this._bundleConfig.internalValue),

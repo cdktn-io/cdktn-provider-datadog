@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation
+// https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface RumOperationConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the RUM application the operation belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#application_id RumOperation#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#application_id RumOperation#application_id}
   */
   readonly applicationId: string;
   /**
   * Category of the operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#category RumOperation#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#category RumOperation#category}
   */
   readonly category?: string;
   /**
   * Description of the operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#description RumOperation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#description RumOperation#description}
   */
   readonly description?: string;
   /**
   * Human readable name of the operation. Defaults to `name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#display_name RumOperation#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#display_name RumOperation#display_name}
   */
   readonly displayName?: string;
   /**
   * Unique name of the operation within the organization. Must not contain spaces. Changing it recreates the operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#name RumOperation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#name RumOperation#name}
   */
   readonly name: string;
   /**
   * Ordered steps defining how RUM events drive the operation lifecycle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#steps RumOperation#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#steps RumOperation#steps}
   */
   readonly steps: RumOperationSteps[] | cdktn.IResolvable;
   /**
   * Tags attached to the operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#tags RumOperation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#tags RumOperation#tags}
   */
   readonly tags?: string[];
 }
@@ -59,7 +59,7 @@ export interface RumOperationStepsCompositePredicates {
   /**
   * RUM event search query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#query RumOperation#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#query RumOperation#query}
   */
   readonly query: string;
 }
@@ -174,19 +174,19 @@ export interface RumOperationStepsComposite {
   /**
   * How the predicates combine. Valid values are `all_of`, `in_order`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#kind RumOperation#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#kind RumOperation#kind}
   */
   readonly kind: string;
   /**
   * Maximum time window, in milliseconds, in which all predicates must match. Value must be between 0 and 1800000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#max_window_ms RumOperation#max_window_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#max_window_ms RumOperation#max_window_ms}
   */
   readonly maxWindowMs?: number;
   /**
   * Predicates combined by the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#predicates RumOperation#predicates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#predicates RumOperation#predicates}
   */
   readonly predicates: RumOperationStepsCompositePredicates[] | cdktn.IResolvable;
 }
@@ -334,7 +334,7 @@ export interface RumOperationStepsNodes {
   /**
   * RUM event search query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#query RumOperation#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#query RumOperation#query}
   */
   readonly query: string;
 }
@@ -449,19 +449,19 @@ export interface RumOperationSteps {
   /**
   * Rule combining several predicates into this step. Exactly one of `nodes` or `composite` must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#composite RumOperation#composite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#composite RumOperation#composite}
   */
   readonly composite?: RumOperationStepsComposite;
   /**
   * Queries matched by this step. Exactly one of `nodes` or `composite` must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#nodes RumOperation#nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#nodes RumOperation#nodes}
   */
   readonly nodes?: RumOperationStepsNodes[] | cdktn.IResolvable;
   /**
   * Lifecycle transition triggered by this step. Valid values are `start`, `update`, `stop`, `error`, `abandoned`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#type RumOperation#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#type RumOperation#type}
   */
   readonly type: string;
 }
@@ -632,7 +632,7 @@ export class RumOperationStepsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation datadog_rum_operation}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation datadog_rum_operation}
 */
 export class RumOperation extends cdktn.TerraformResource {
 
@@ -648,7 +648,7 @@ export class RumOperation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RumOperation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumOperation to import
-  * @param importFromId The id of the existing RumOperation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumOperation that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumOperation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -660,7 +660,7 @@ export class RumOperation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.27.0/docs/resources/rum_operation datadog_rum_operation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.30.0/docs/resources/rum_operation datadog_rum_operation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -671,7 +671,7 @@ export class RumOperation extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_rum_operation',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.27.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
